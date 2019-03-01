@@ -123,14 +123,15 @@
                 ~.divider::after {
                     content: "\f105";
                 }
-                &:checked {
-                    ~#section-#{$number} {
-                        display: grid;
-                    }
-                    ~.divider::after {
-                        content: "\f106";
-                    }
-                }
+                // Removed due to unsolved bug
+                // &:checked {
+                //     ~#section-#{$number} {
+                //         display: grid;
+                //     }
+                //     ~.divider::after {
+                //         content: "\f106";
+                //     }
+                // }
             }
         }
     }
