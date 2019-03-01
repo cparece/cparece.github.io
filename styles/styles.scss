@@ -1,14 +1,7 @@
 // Color Scheme and color variables are stored in palette.scss
 // Mixin are stored in mixin.scss
 // Variables are stored in variables.scss
-// TODO: create atleast 1 custom-coded mixin
-// TODO: use extend in atleast one instance, extend style or class. comment where extend exists.
-// TODO: use two built in sass functions, comment where function exists.
-// TODO: demonstrate the use of if/else, comment where if/else exists.
-// TODO: use atleaast 2 partial files in managing your sass.
 // TODO: Compile scss, with CSS output expanded
-// colors need to be moved to palette after
-// @import "import.scss";
 @import "variables.scss";
 @import "mixin.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
