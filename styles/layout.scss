@@ -1,0 +1,64 @@
+// CSS GRID
+.container {
+    @include grid();
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: 100px auto;
+    // min-height: $window;
+    padding: $clear $gutter;
+    @include media-query(small) {
+        padding: $padding-lg;
+    }
+    @include media-query(medium) {
+        padding: $clear $padding-m;
+    }
+    @include layout-span() {
+        @include media-query(small) {
+            grid-column: span $columns;
+        }
+    }
+    .col-6-layout {
+        @include grid();
+        grid-gap: $padding-xs;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-column: span $columns;
+        padding: $padding-xs;
+        div.img {
+            padding: $padding-sm;
+        }
+    }
+    .center {
+        align-items: center;
+    }
+    .header {
+        margin: $clear;
+    }
+    img {
+        @extend %img;
+    }
+    //style for events
+    .activity {
+        @include event(activity);
+    }
+    .hotel {
+        @include event(hotel);
+    }
+    .flight {
+        @include event(flight);
+    }
+}
+
+//FLEX
+.flex {
+    @extend %flex;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+//HIDDEN ELEMENTS    
+.hidden {
+    display: none;
+    visibility: hidden;
+}
