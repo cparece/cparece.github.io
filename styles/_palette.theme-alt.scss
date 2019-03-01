@@ -1,0 +1,53 @@
+$font-color: #fff;
+$base-color: hsl(178, 76%, 37%);
+//creating a triad color palette, triad meaning 3 colors that are 120 degrees from eachother on the color wheel.
+$base-color-hue: hue($base-color);
+$base-color-saturation: saturation($base-color);
+$base-color-lightness: lightness($base-color);
+//need the hue, saturation and lightnss broken down for the base color because the base color and other colors 
+//will use the same saturation an lightness, just change the hue.
+$accent: hsl($base-color-hue + (120 * 1), $base-color-saturation, $base-color-lightness);
+$accent-alt: hsl($base-color-hue + (120 * 2), $base-color-saturation, $base-color-lightness + 20); // also need to adjust lightness because color didnt look great.
+//primary
+$color01:lighten($base-color, 30%); //sass function lighten
+$color02:lighten($base-color, 20%);
+$color03:lighten($base-color, 10%);
+$color04:lighten($base-color, 5%);
+$color05:lighten($base-color, 0%);
+$color06:darken($base-color, 5%); //sass function darken
+$color07:darken($base-color, 10%);
+$color08:darken($base-color, 20%);
+$color09:darken($base-color, 30%);
+//accent 1
+$accent01:lighten($accent, 30%);
+$accent02:lighten($accent, 20%);
+$accent03:lighten($accent, 10%);
+$accent04:lighten($accent, 5%);
+$accent05:lighten($accent, 0%);
+$accent06:darken($accent, 5%);
+$accent07:darken($accent, 10%);
+$accent08:darken($accent, 20%);
+$accent09:darken($accent, 30%);
+//accent 2
+$accent-alt-01:lighten($accent-alt, 30%);
+$accent-alt-02:lighten($accent-alt, 20%);
+$accent-alt-03:lighten($accent-alt, 10%);
+$accent-alt-04:lighten($accent-alt, 5%);
+$accent-alt-05:lighten($accent-alt, 0%);
+$accent-alt-06:darken($accent-alt, 5%);
+$accent-alt-07:darken($accent-alt, 10%);
+$accent-alt-08:darken($accent-alt, 20%);
+$accent-alt-09:darken($accent-alt, 30%);
+//bg
+$bg-color01: $color01;
+$bg-color02: darken($color09, 1%);
+//function for text color switching
+@function text-color($color) {
+    // if else
+    @if (lightness($color) > 49) {
+        @return $color09;
+    }
+    @else {
+        @return $font-color;
+    }
+}
