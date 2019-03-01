@@ -15,11 +15,12 @@
         padding: $padding-xs;
         align-self: center;
     }
-    &::after {
-        content: "\f105";
-        @include font-awesome();
-        padding-right: $padding-m;
-    }
+    // Removed due to unsolved bug
+    // &::after {
+    //     content: "\f105";
+    //     @include font-awesome();
+    //     padding-right: $padding-m;
+    // }
 }
 
 .field {

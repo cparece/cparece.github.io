@@ -230,20 +230,6 @@ html body .col-6-layout .header {
       align-self: center;
 }
 
-.divider::after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  padding-right: 1.2rem;
-}
-
 .field {
   padding: 1.2rem 0;
 }
