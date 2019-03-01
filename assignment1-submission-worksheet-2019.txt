@@ -3,7 +3,7 @@ Your name:
 <b>Cortney Stauffer (Parece)</b>
 
 1. Provide a link to the first page of your website: <a href="https://cparece.github.io/">https://cparece.github.io/</a>
-View this document on github: <a href="cparece.github.io/README.md"> README.md </a>
+View this document on github: <a href="https://github.com/cparece/cparece.github.io/blob/master/README.md"> README.md </a>
 
 My site looks the way I want on (choose one): <b>Mac</b>
 
