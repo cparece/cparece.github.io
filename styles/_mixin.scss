@@ -84,33 +84,6 @@
     }
 }
 
-// //mixins for expand and collapsing sections
-// @mixin toggle() {
-//     //for loop
-//     @for $section from 1 through 10 {
-//         #section-#{$section} {
-//             display: none;
-//             transition: display 0.5s;
-//         }
-//         #toggle-#{$section} {
-//             ~.divider::after {
-//                 content: "\f106";
-//             }
-//         }
-//     }
-//     @for $toggle from 1 through 10 {
-//         #toggle-#{$toggle} {
-//             &:checked {
-//                 ~#section-#{$toggle} {
-//                     display: grid;
-//                 }
-//                 ~.divider::after {
-//                     content: "\f106";
-//                 }
-//             }
-//         }
-//     }
-// }
 //mixins for expand and collapsing sections
 @mixin toggle() {
     //for loop

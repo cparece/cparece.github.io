@@ -2,8 +2,7 @@
 .container {
     @include grid();
     grid-template-columns: repeat($columns, 1fr);
-    grid-template-rows: 100px auto;
-    // min-height: $window;
+    grid-template-rows: auto;
     padding: $clear $gutter;
     @include media-query(small) {
         padding: $padding-lg;

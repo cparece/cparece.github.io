@@ -6,19 +6,21 @@ $nav-bg: $color07;
 $flight-color: $color08;
 $hotel-color: $color06;
 $activity-color: $accent05;
+// base scales
+$base: 14px;
+$base-rem: 1rem; //need rems to calculate fonts
 // padding and margin
-$padding-xs: .4rem;
-$padding-sm: 1rem;
-$padding-m: 1.2rem;
-$padding-lg: 1.4rem;
-$padding-xl: 1.8rem;
+$padding-units: .2rem;
+$padding-sm: $base-rem;
+$padding-xs: $padding-sm - ($padding-units * 3);
+$padding-m: $padding-sm+$padding-units;
+$padding-lg: $padding-m+$padding-units;
+$padding-xl: $padding-lg+$padding-units;
 $clear: 0;
 // border radius
 $radius: 2px;
 $circle: 50%;
 // fonts
-$base: 12px;
-$base-rem: 1rem; //need rems to calculate fonts
 $rem-units: .25rem;
 $font-sm: $base-rem;
 $font-m: $base-rem+$rem-units; //operator

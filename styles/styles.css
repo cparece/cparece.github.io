@@ -22,7 +22,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 html body {
@@ -30,7 +30,7 @@ html body {
   font-weight: 200;
   margin: 0;
   background-color: #041f1f;
-  color: text-color(#041f1f);
+  color: #fff;
 }
 
 html body h1 {
@@ -217,7 +217,7 @@ html body .col-6-layout .header {
   font-size: 1.25rem;
   font-weight: 400;
   background-color: #e5df3e;
-  color: text-color(#e5df3e);
+  color: #041f1f;
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
   height: 40px;
@@ -251,7 +251,7 @@ nav ul h2 {
 
 nav ul li {
   margin: 0.4rem;
-  padding: 1.2rem 1.8rem;
+  padding: 1.2rem 1.6rem;
   border-radius: 2px;
 }
 
@@ -280,8 +280,8 @@ nav ul li.selected:hover {
   grid-gap: 0.4rem;
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: 100px auto;
-      grid-template-rows: 100px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   padding: 0 8rem;
 }
 
@@ -526,17 +526,17 @@ nav ul li.selected:hover {
 
 .container .activity {
   background-color: #a117a6;
-  color: text-color(#a117a6);
+  color: #fff;
 }
 
 .container .hotel {
   background-color: #14908b;
-  color: text-color(#14908b);
+  color: #fff;
 }
 
 .container .flight {
   background-color: #0a4c4a;
-  color: text-color(#0a4c4a);
+  color: #fff;
 }
 
 .spacer {

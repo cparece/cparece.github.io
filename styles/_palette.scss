@@ -41,3 +41,13 @@ $accent-alt-09:darken($accent-alt, 30%);
 //bg
 $bg-color01: $color09;
 $bg-color02: darken($color09, 1%);
+//function for text color switching
+@function text-color($color) {
+    // if else
+    @if (lightness($color) > 49) {
+        @return $color09;
+    }
+    @else {
+        @return $font-color;
+    }
+}

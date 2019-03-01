@@ -13,10 +13,10 @@ PART 1: BASE RESPONSIVE WEBSITE (24 points)
 1. I used <b> Flexbox and Grid </b> in making my responsive website.
 
 2. Sass partial file name and line number where a media query appears:
-<b> <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a> </b>lines 8, 11, 14
-<b> <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a> </b>lines 1-14 (media query mixin)
-<b> <a href="cparece.github.io/styles/_timeline.scss"> timeline.scss </a></b> lines 8, 12, 18
-<b><a href="cparece.github.io/styles/_variables.scss"> variables.scss </a> </b> lines 55-57 (variables for breakpoints)
+<b> <a href="cparece.github.io/styles/_layout.scss"> _layout.scss </a> </b>lines 8, 11, 14
+<b> <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a> </b>lines 1-14 (media query mixin)
+<b> <a href="cparece.github.io/styles/_timeline.scss"> _timeline.scss </a></b> lines 8, 12, 18
+<b><a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a> </b> lines 55-57 (variables for breakpoints)
 
 3. Cite your images here: All images are my own.
 
@@ -26,42 +26,42 @@ PART 2: SASS (50 points)
 Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
 
 5. Sass variable list: 
-       <a href="cparece.github.io/styles/_variables.scss"> variables.scss </a> entire file
+       <a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a> entire file
       
 
 6. 1 custom-coded mixin:
-       <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a> entire file
+       <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a> entire file
 
 
 7. 1 extend:
 Extend for Flex:
-       <a href="cparece.github.io/styles/_variables.scss"> variables.scss </a> lines 61-66
-       <a href="cparece.github.io/styles/_overview.scss"> overview.scss </a> line 7
-       <a href="cparece.github.io/styles/_navigation.scss"> navigation.scss </a> line 9
-       <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a> line 53
+       <a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a> lines 61-66
+       <a href="cparece.github.io/styles/_overview.scss"> _overview.scss </a> line 7
+       <a href="cparece.github.io/styles/_navigation.scss"> _navigation.scss </a> line 9
+       <a href="cparece.github.io/styles/_layout.scss"> _layout.scss </a> line 53
 Extend for Img:
-       <a href="cparece.github.io/styles/_variables.scss"> variables.scss </a> lines 40-46
-       <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a> line 37
+       <a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a> lines 40-46
+       <a href="cparece.github.io/styles/_layout.scss"> _layout.scss </a> line 37
 
 8. 2 levels of nesting:
-       <a href="cparece.github.io/styles/_navigation.scss"> navigation.scss </a> line 4, 10
+       <a href="cparece.github.io/styles/_navigation.scss"> _navigation.scss </a> line 4, 10
 
 9. 2 instances of built-in Sass functions:
-       <a href="cparece.github.io/styles/_palette.scss"> palette.scss </a> most of palette file includes built in sass functions lighten($color, $amount), darken($color, $amount), hue($color), hsl($hue, $saturation), etc.
+       <a href="cparece.github.io/styles/_palette.scss"> _palette.scss </a> most of palette file includes built in sass functions lighten($color, $amount), darken($color, $amount), hue($color), hsl($hue, $saturation), etc.
 
 10. 1 use of if/else
-       <a href="cparece.github.io/styles/_palette.scss"> palette.scss </a> lines 51-56
-       <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a> lines 72-84
+       <a href="cparece.github.io/styles/_palette.scss"> _palette.scss </a> lines 51-56
+       <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a> lines 72-84
 
 11. The names of at least 2 partial files
-       <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a>
-       <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a>
-       <a href="cparece.github.io/styles/_navigation.scss"> navigation.scss </a>
-       <a href="cparece.github.io/styles/_overview.scss"> overview.scss </a>
-       <a href="cparece.github.io/styles/_palette.scss"> palette.scss </a>
-       <a href="cparece.github.io/styles/_timeline.scss"> timeline.scss </a>
-       <a href="cparece.github.io/styles/_typography.scss"> typography.scss </a>
-       <a href="cparece.github.io/styles/_variables.scss"> variables.scss </a>
+       <a href="cparece.github.io/styles/_layout.scss"> _layout.scss </a>
+       <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a>
+       <a href="cparece.github.io/styles/_navigation.scss"> _navigation.scss </a>
+       <a href="cparece.github.io/styles/_overview.scss"> _overview.scss </a>
+       <a href="cparece.github.io/styles/_palette.scss"> _palette.scss </a>
+       <a href="cparece.github.io/styles/_timeline.scss"> _timeline.scss </a>
+       <a href="cparece.github.io/styles/_typography.scss"> _typography.scss </a>
+       <a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a>
 
 
 PART 3: COLOR  (25 points)
@@ -75,5 +75,17 @@ I did not use Natalya's work, I came up with my own <a href="cparece.github.io/s
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
 
+I believe my above and beyond is worth 10 pointws because I did several of the items listed in the Above and Beyond section and believe that they were done very well. I even tried experimenting a bit with the scss and all the potential capabilities.
 
+<b>Use of Sass Loops</b>
+I used several Sass Loops in <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a>. I created for loops to crete a custom media query mixin helping clean up my scss when using media queries. I tried using a for loop to create a consistent baseline style for h1-h6 tags, so I wouldn't have to write out each tag individually. For loops are extremly helpful when I am trying to quickly generate naming conventions that would be 1 through X. I used this to quickly create the grid column and row classes. I also used a for loop to help create the mixin that would allow for me to easily create id tags without having to individually write out 1 through X that was then used to be able to expand and collapse sections within the <a href="cparece.github.io/index.html"> index.html </a>
 
+<b>Super Dry, well-structured Sass</b>
+My sass is very dry all of my <a href="cparece.github.io/styles/_variables.scss"> _variables.scss </a>. The fonts, padding, and margins can easily rescale just by changing the $base size (line 10). All of the variables are pulled out into one file, and imported as the first line in the <a href="cparece.github.io/styles/_styles.scss"> _styles.scss</a>. Then the <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a> is pulled in with several different mixins to help keep the scss files clean and minimalized. Each additional partial is then added to the <a href="cparece.github.io/styles/_styles.scss"> _styles.scss</a> so that it cascades properly. 
+
+<b>Color Scheme Generation</b>
+See notes on #11. 
+
+<b>Other</b>
+I found a way to expand and collapse divs in pure html and Sass by using a checkbox input and adding the proper classes. You can see this demonstrated by clicking on any of the headers on the elements with the class .dividers on the <a href="cparece.github.io/index.html"> index.html </a>. The only piece I ended up taking out was the addition of adding the ::after class for an expaned and collapse arrow because it was being buggy and wouldn't work all the time. After spending over 2.5 hours to debug, I ended up just removing that part, but it is commented out in the scss files, so feel free to comment it back in to take a look. This feature is in the <a href="cparece.github.io/styles/_mixin.scss"> _mixin.scss </a> and 
+<a href="cparece.github.io/styles/_overview.scss"> _overview.scss </a>.
