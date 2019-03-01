@@ -2,12 +2,12 @@
 // Mixin are stored in mixin.scss
 // Variables are stored in variables.scss
 // TODO: Compile scss, with CSS output expanded
-@import "variables.scss";
-@import "mixin.scss";
+@import "_variables.scss";
+@import "_mixin.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,900');
-@import "typography.scss"; // TYPOGRAPHY
-@import "overview.scss"; // MAIN OVERVIEW VIEW
-@import "navigation.scss"; // NAV
-@import "layout.scss"; // GRID, FLEX, LAYOUTS
-@import "timeline.scss"; // CALENDAR LIST VIEW
+@import "_typography.scss"; // TYPOGRAPHY
+@import "_overview.scss"; // MAIN OVERVIEW VIEW
+@import "_navigation.scss"; // NAV
+@import "_layout.scss"; // GRID, FLEX, LAYOUTS
+@import "_timeline.scss"; // CALENDAR LIST VIEW
