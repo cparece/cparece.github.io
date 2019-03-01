@@ -106,8 +106,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-1 ~ .divider::after {
-  content: "\f105";
+#toggle-1:checked ~ #section-1 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-2 ~ #section-2 {
@@ -116,8 +117,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-2 ~ .divider::after {
-  content: "\f105";
+#toggle-2:checked ~ #section-2 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-3 ~ #section-3 {
@@ -126,8 +128,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-3 ~ .divider::after {
-  content: "\f105";
+#toggle-3:checked ~ #section-3 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-4 ~ #section-4 {
@@ -136,8 +139,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-4 ~ .divider::after {
-  content: "\f105";
+#toggle-4:checked ~ #section-4 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-5 ~ #section-5 {
@@ -146,8 +150,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-5 ~ .divider::after {
-  content: "\f105";
+#toggle-5:checked ~ #section-5 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-6 ~ #section-6 {
@@ -156,8 +161,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-6 ~ .divider::after {
-  content: "\f105";
+#toggle-6:checked ~ #section-6 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-7 ~ #section-7 {
@@ -166,8 +172,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-7 ~ .divider::after {
-  content: "\f105";
+#toggle-7:checked ~ #section-7 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-8 ~ #section-8 {
@@ -176,8 +183,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-8 ~ .divider::after {
-  content: "\f105";
+#toggle-8:checked ~ #section-8 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-9 ~ #section-9 {
@@ -186,8 +194,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-9 ~ .divider::after {
-  content: "\f105";
+#toggle-9:checked ~ #section-9 {
+  display: -ms-grid;
+  display: grid;
 }
 
 #toggle-10 ~ #section-10 {
@@ -196,8 +205,9 @@ html body .col-6-layout .header {
   transition: display 0.5s;
 }
 
-#toggle-10 ~ .divider::after {
-  content: "\f105";
+#toggle-10:checked ~ #section-10 {
+  display: -ms-grid;
+  display: grid;
 }
 
 .divider {
