@@ -3,12 +3,12 @@
     @include grid();
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: auto;
-    padding: $clear $gutter;
+    padding: $clear $gutter $gutter $gutter;
     @include media-query(small) {
         padding: $padding-lg;
     }
     @include media-query(medium) {
-        padding: $clear $padding-m;
+        padding: $clear $padding-m $padding-m $padding-m;
     }
     @include layout-span() {
         @include media-query(small) {

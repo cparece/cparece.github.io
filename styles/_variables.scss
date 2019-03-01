@@ -60,7 +60,7 @@ $breakpoint-small: 768px;
 $breakpoint-medium: 1200px;
 // css grid
 $columns: 7;
-$gutter: 8rem;
+$gutter: $base-rem * 8;
 //extend for flex
 %flex {
     display: flex;
