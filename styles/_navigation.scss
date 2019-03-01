@@ -1,0 +1,36 @@
+nav {
+    background: $nav-bg;
+    padding: $padding-xs;
+    //nesting level 1
+    ul {
+        list-style: none;
+        margin: $clear;
+        padding: $clear;
+        @extend %flex;
+        // nesting level 2
+        h2 {
+            color: $font-color !important;
+        }
+        li {
+            margin: $padding-xs;
+            padding: $padding-m $padding-xl;
+            border-radius: $radius;
+            // nesting level 3
+            &:hover {
+                background: $hover !important;
+            }
+            a {
+                color: $font-color;
+                text-decoration: none;
+            }
+            &.selected {
+                background: $selected;
+                box-shadow: $box-shadow;
+                // nesting level 4
+                &:hover {
+                    background: $selected !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.date {
+    //nesting
+    .list {
+        border: $dashed-item;
+        padding: $padding-sm;
+        background: $bg-color02;
+        min-height: $list-height;
+        @include media-query(small) {
+            min-height: auto;
+        }
+        h3 {
+            @include media-query(small) {
+                padding: $padding-xs 0 !important;
+            }
+        }
+        hr {
+            border: $underline;
+            @include media-query(small) {
+                display: none;
+            }
+        }
+        .event {
+            border-radius: $radius;
+            padding: $padding-xs;
+            margin-bottom: $padding-xs;
+            justify-content: left;
+        }
+    }
+}
+
+.fade {
+    opacity: $fade;
+}

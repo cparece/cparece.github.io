@@ -1,0 +1,137 @@
+    //media query mixin
+    @mixin media-query($media-query) {
+        //if loop for media query 
+        @if $media-query==small {
+            @media only screen and (max-width: $breakpoint-small) {
+                @content;
+            }
+        }
+        @if $media-query==medium {
+            @media only screen and (max-width: $breakpoint-medium) {
+                @content;
+            }
+        }
+    }
+    
+    //h1,h2,h3,h4,h5,h6 mixin
+    @mixin header() {
+        //for loop, to format H1-H6 tags.
+        @for $h from 1 through 6 {
+            h#{$h} {
+                @content;
+                font-family: $font-family-02;
+                font-weight: $weight-light;
+                margin: $clear;
+            }
+        }
+    }
+    
+    //font awesome mixin
+    @mixin font-awesome() {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+    
+    //grid mixin
+    @mixin grid() {
+        display: grid;
+        grid-gap: $padding-xs;
+    }
+    
+    //grid span mixin
+    @mixin layout-span() {
+        //for loop, creating the grid column and row spans 1-10.
+        @for $cell from 1 through 10 {
+            .span-#{$cell} {
+                @content;
+                grid-column: span $cell;
+            }
+            .span-row-#{$cell} {
+                @content;
+                grid-row: span $cell;
+            }
+        }
+    }
+    
+    //font-bg color mixin
+    @mixin font-color($color) {
+        background-color: $color;
+        color: text-color($color);
+    }
+    
+    // event color mixin
+    @mixin event($event) {
+        //if else
+        @if $event=="hotel" {
+            $color: $hotel-color; // background color
+            @include font-color($color);
+        }
+        @else if $event=="flight" {
+            $color: $flight-color; // background color
+            @include font-color($color);
+        }
+        @else if $event=="activity" {
+            $color: $activity-color; // background color
+            background-color: $color;
+            color: text-color($color);
+        }
+    }
+    
+    // //mixins for expand and collapsing sections
+    // @mixin toggle() {
+    //     //for loop
+    //     @for $section from 1 through 10 {
+    //         #section-#{$section} {
+    //             display: none;
+    //             transition: display 0.5s;
+    //         }
+    //         #toggle-#{$section} {
+    //             ~.divider::after {
+    //                 content: "\f106";
+    //             }
+    //         }
+    //     }
+    //     @for $toggle from 1 through 10 {
+    //         #toggle-#{$toggle} {
+    //             &:checked {
+    //                 ~#section-#{$toggle} {
+    //                     display: grid;
+    //                 }
+    //                 ~.divider::after {
+    //                     content: "\f106";
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    //mixins for expand and collapsing sections
+    @mixin toggle() {
+        //for loop
+        @for $number from 1 through 10 {
+            #toggle-#{$number} {
+                ~#section-#{$number} {
+                    display: none;
+                    transition: display 0.5s;
+                }
+                ~.divider::after {
+                    content: "\f105";
+                }
+                // Removed due to unsolved bug
+                // &:checked {
+                //     ~#section-#{$number} {
+                //         display: grid;
+                //     }
+                //     ~.divider::after {
+                //         content: "\f106";
+                //     }
+                // }
+            }
+        }
+    }

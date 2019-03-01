@@ -1,0 +1,69 @@
+@import "_palette.scss";
+// unique colors
+$selected: $color05;
+$hover: darken($selected, 5%);
+$nav-bg: $color07;
+$flight-color: $color08;
+$hotel-color: $color06;
+$activity-color: $accent05;
+// padding and margin
+$padding-xs: .4rem;
+$padding-sm: 1rem;
+$padding-m: 1.2rem;
+$padding-lg: 1.4rem;
+$padding-xl: 1.8rem;
+$clear: 0;
+// border radius
+$radius: 2px;
+$circle: 50%;
+// fonts
+$base: 12px;
+$base-rem: 1rem; //need rems to calculate fonts
+$rem-units: .25rem;
+$font-sm: $base-rem;
+$font-m: $base-rem+$rem-units; //operator
+$font-lg: $font-m+$rem-units; //operator
+$font-xl: $font-lg+($rem-units*2); //operator
+$font-family: 'Montserrat',
+sans-serif;
+$font-family-02:'Roboto Slab',
+sans-serif;
+$weight-light: 200;
+$weight-regular: 400;
+$weight-bold: 600;
+$caps: uppercase;
+// box shadows
+$box-shadow: 1px 1px 2px $color07;
+$box-shadow-img: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+// img 
+$img-filter: saturate(3);
+// extend for image
+%img {
+    width: 100%;
+    box-shadow: $box-shadow-img;
+    filter: $img-filter;
+    border-radius: $radius;
+}
+
+// borders
+$dashed-item: 1px dashed $color07;
+$underline: .5px solid $color08;
+//heights
+$list-height: 200px;
+$window: 100vh;
+//opacity
+$fade: .25;
+//media queries
+$breakpoint-small: 768px;
+$breakpoint-medium: 1200px;
+// css grid
+$columns: 7;
+$gutter: 8rem;
+//extend for flex
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// toggle
