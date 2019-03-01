@@ -1,15 +1,16 @@
 # cparece.github.io
-Your name:
+Your name: 
+<b>Cortney Stauffer (Parece)</b>
 
-1. Provide a link to the first page of your website:
+1. Provide a link to the first page of your website: <a href="https://cparece.github.io/">https://cparece.github.io/</a>
 
-My site looks the way I want on (choose one): Mac
+My site looks the way I want on (choose one): <b>Mac</b>
 
-With this browser (choose one): Chrome 
+With this browser (choose one): <b>Chrome </b>
 
 PART 1: BASE RESPONSIVE WEBSITE (24 points)
 
-1. I used    Flexbox    Grid    Flexbox and Grid    in making my responsive website.
+1. I used <b> Flexbox and Grid </b> in making my responsive website.
 
 2. Sass partial file name and line number where a media query appears:
 
