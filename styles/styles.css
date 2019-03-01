@@ -29,8 +29,8 @@ html body {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   margin: 0;
-  background-color: #6bebe7;
-  color: #041f1f;
+  background-color: #041f1f;
+  color: text-color(#041f1f);
 }
 
 html body h1 {
@@ -217,7 +217,7 @@ html body .col-6-layout .header {
   font-size: 1.25rem;
   font-weight: 400;
   background-color: #e5df3e;
-  color: #041f1f;
+  color: text-color(#e5df3e);
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
   height: 40px;
@@ -526,17 +526,17 @@ nav ul li.selected:hover {
 
 .container .activity {
   background-color: #a117a6;
-  color: #fff;
+  color: text-color(#a117a6);
 }
 
 .container .hotel {
   background-color: #14908b;
-  color: #fff;
+  color: text-color(#14908b);
 }
 
 .container .flight {
   background-color: #0a4c4a;
-  color: #fff;
+  color: text-color(#0a4c4a);
 }
 
 .spacer {
