@@ -1,0 +1,27 @@
+@include toggle();
+.divider {
+    border-radius: $radius;
+    padding: $padding-xs;
+    margin: $padding-xs $clear;
+    $color: $accent-alt-05; // background color
+    @extend %flex;
+    font-size: $font-m;
+    font-weight: $weight-regular;
+    @include font-color($color);
+    font-family: $font-family-02;
+    text-transform: $caps;
+    height: 40px;
+    div {
+        padding: $padding-xs;
+        align-self: center;
+    }
+    &::after {
+        content: "\f105";
+        @include font-awesome();
+        padding-right: $padding-m;
+    }
+}
+
+.field {
+    padding: $padding-m $clear;
+}
