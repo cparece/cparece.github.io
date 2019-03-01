@@ -54,17 +54,21 @@ Extend for Img:
        <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a> lines 72-84
 
 11. The names of at least 2 partial files
+       <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a>
+       <a href="cparece.github.io/styles/_mixin.scss"> mixin.scss </a>
        <a href="cparece.github.io/styles/_navigation.scss"> navigation.scss </a>
        <a href="cparece.github.io/styles/_overview.scss"> overview.scss </a>
+       <a href="cparece.github.io/styles/_palette.scss"> palette.scss </a>
        <a href="cparece.github.io/styles/_timeline.scss"> timeline.scss </a>
-       <a href="cparece.github.io/styles/_layout.scss"> layout.scss </a>
+       <a href="cparece.github.io/styles/_typography.scss"> typography.scss </a>
+       <a href="cparece.github.io/styles/_variables.scss"> variables.scss </a>
 
 
 PART 3: COLOR  (25 points)
 Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
 
 11. Explain your color scheme. Did you use Natalya's work? Did you make modifications to it?
-
+I did not use Natalya's work, I came up with my own <a href="cparece.github.io/styles/_palette.scss"> color palette </a>. I wanted the flexability to have 3 colors since I wanted my calendar to be driven based on 3 types of events (hotels, flights and activities). So I decided on a triad palette. Other than white, the only color that I hard coded was hsl(178, 76%, 37%) for my base color. from there I used the base color to calculate my accent and accent alternate. A triad palette is based off of changing th hue by 120 and 240, but keeping saturation and lightness the same. After compiling, I realized my triad color was a bit odd and didn't read the best, so I decided to tweak the lightness. Once I got these colors, I also decided to expand the palette to give me a variety of light and dark options for each color. I decided on 9 color variables for each accent. I then created a function that would allow me to easily make sure my text can be switched to light or dark depending on the background color.
 
 
 

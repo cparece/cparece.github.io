@@ -1,9 +1,5 @@
-// TODO: Create a color scheme based on a starting color and its compliment
-// NOTE: cannot use pre-created color schemes like Adobe Color. Choose a color, its compliment and derive your other colors from there.
-// NOTE: you can use black/white/greys
-// TODO: you can use Natalya Shelburne's Sass formulas, but comment where her work appears and extend upon it.
 $font-color: #fff;
-$base-color: hsl(178, 76%, 37%); //#17a7a3;
+$base-color: hsl(178, 76%, 37%);
 //creating a triad color palette, triad meaning 3 colors that are 120 degrees from eachother on the color wheel.
 $base-color-hue: hue($base-color);
 $base-color-saturation: saturation($base-color);
