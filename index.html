@@ -7,6 +7,8 @@
     <meta charset- "UTF-8">
     <title>Client Admin Site</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- using Font Awesome's Free Open Source CDN for Icons https://fontawesome.com-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,9 +16,8 @@
         <ul>
             <h2>Travel Planner</h2>
             <p class="spacer"></p>
-            <li><a href="overview.html">Overview</a></li>
-            <li class="selected"><a href="index.html">Timeline</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li class="selected"><a href="overview.html">Overview</a></li>
+            <li><a href="index.html">Timeline</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -24,208 +25,271 @@
             <h1>Hawaii 2019</h1>
             <h2>April 25 - May 10</h2>
         </div>
+        <input id="toggle-1" type="checkbox" class="hidden" checked/>
+        <label for="toggle-1" class="span-7 divider">
+            <div>Overview</div>
+            <p class="spacer"></p>
+        </label>
+        <div class="col-6-layout" id="section-1">
+            <div class="span-6">Congratulations on booking your vacation to Hawaii! During your vacation, you will be staying at some of the most exquisite hotels Hawaii has to offer. You will adventure through different climates, as you venture through the different parts
+                of the islands.
+                </br>
+                </br> First you will enjoy relaxing on the world-famous beaches, hiking through the illustrious valleys, rainforests and waterfalls that Maui has to offer. Then you will hop over to Oahu where you can see the famous Pearl Harbor, as well as,
+                surf with the locals in Waikiki and swim with the sea turtles in the North Shore!
+                </br>
 
-        <div class="span-1 date fade">
-            <div class="list">
-                <div>Apr 21</div>
-                <h3 class="header">Sunday</h3>
-                <hr>
-                <p>Easter</p>
+            </div>
+            <!-- <div class="span-2 img"><img src="img/hawaii.jpg" /> </div> -->
+
+        </div>
+        <h1>Maui</h1>
+
+        <div class="span-7 img"><img src="img/maui.jpg" /> </div>
+
+        <!-- use hidden input for toggling sections-->
+        <input id="toggle-2" type="checkbox" class="hidden" checked/>
+        <label for="toggle-2" class="span-7 divider flight">
+            <div>Flight To Maui (2) </div>
+             <p class="spacer"></p>
+        </label>
+
+        <div class="col-6-layout center" id="section-2">
+            <div class="span-2 span-row-6 img"><img src="img/flight.jpg" /> </div>
+            <div class="span-4 header">Hawaiian Airlines Flight #1</div>
+
+            <div class="field span-1">
+
+                <label>Confirmation</label>
+                <p>DMOSPX1</p>
+            </div>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>April 25, 2019</p>
+            </div>
+            <div class="field span-1">
+                <label>Time</label>
+                <p>10:00am</p>
+            </div>
+            <div class="field span-1">
+                <label>Duration</label>
+                <p>11hr 15m</p>
+            </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>JFK to HNL</p>
+            </div>
+            <div class="field span-1">
+                <label>Seats</label>
+                <p>17A, 17B</p>
+            </div>
+            <div class="span-4 header">Hawaiian Airlines Flight #2</div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>DMOSPX2</p>
+            </div>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>April 25, 2019</p>
+            </div>
+            <div class="field span-1">
+                <label>Time</label>
+                <p>4:37pm</p>
+            </div>
+            <div class="field span-1">
+                <label>Duration</label>
+                <p>42m</p>
+            </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>HNL to OGG</p>
+            </div>
+            <div class="field span-1">
+                <label>Seats</label>
+                <p>6C, 6D</p>
             </div>
         </div>
-        <div class="span-1  date fade">
-            <div class="list">
-                <div>Apr 22</div>
-                <h3 class="header">Monday</h3>
-                <hr>
+
+        <input id="toggle-3" type="checkbox" class="hidden" checked/>
+        <label for="toggle-3" class="span-7 divider hotel">
+            <div>Hotels in Maui (2)</div>
+            <p class="spacer"></p>
+
+        </label>
+        <div class="col-6-layout" id="section-3">
+            <div class="span-6 header">Hyatt Regency Maui Resort And Spa </div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>7388494178130</p>
+            </div>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>April 25 - April 30, 2019</p>
+            </div>
+            <div class="field span-1">
+                <label>Check In Time</label>
+                <p>4:00 PM</p>
+            </div>
+            <div class="field span-1">
+                <label>Check Out Time</label>
+                <p>11:00 AM</p>
+            </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>200 Nohea Kai Dr, Lahaina, HI 96761</p>
+            </div>
+
+            <div class="field span-1">
+                <label>Phone Number</label>
+                <p>(808) 661-1234</p>
+            </div>
+            <div class="span-6 header">The Ritz-Carlton, Kapalua</div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>7395238092160</p>
+            </div>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>April 30 - May 2, 2019</p>
+            </div>
+            <div class="field span-1">
+                <label>Check In Time</label>
+                <p>4:00 PM</p>
+            </div>
+            <div class="field span-1">
+                <label>Check Out Time</label>
+                <p>11:00 AM</p>
+            </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>1 Ritz Carlton Dr, Lahaina, HI 96761</p>
+            </div>
+
+            <div class="field span-1">
+                <label>Phone Number</label>
+                <p>(808)669-6200</p>
             </div>
         </div>
-        <div class="span-1  date fade">
-            <div class="list">
-                <div>Apr 23</div>
-                <h3 class="header">Tuesday</h3>
-                <hr>
+        <h1>Oahu</h1>
+
+        <div class="span-7 img"><img src="img/skyline.jpg" /> </div>
+
+        <input id="toggle-4" type="checkbox" class="hidden" checked/>
+        <label for="toggle-4" class="span-7 divider flight">
+            <div>Flight to Oahu</div>
+             <p class="spacer"></p>
+        </label>
+        <div class="col-6-layout" id="section-4">
+
+            <div class="span-4 header">Hawaiian Airlines Flight #3</div>
+            <div class="span-2 span-row-3 img"><img src="img/flight-02.jpg" /> </div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>DMOSPX3</p>
             </div>
-        </div>
-        <div class="span-1  date fade">
-            <div class="list">
-                <div>Apr 24</div>
-                <h3 class="header">Wednesday</h3>
-                <hr>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>May 2, 2019</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 25</div>
-                <h3 class="header">Thursday</h3>
-                <hr>
-                <div class="flex event flight">
-                    <div class="circle"></div>
-                    <p>10a-5:19p </br>JFK to OGG</p>
-                </div>
-                <div class="flex event hotel">
-                    <div class="circle"></div>
-                    <p>Hyatt Regency Maui</p>
-                </div>
+            <div class="field span-1">
+                <label>Time</label>
+                <p>1:16pm</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 26</div>
-                <h3 class="header">Friday</h3>
-                <hr>
-                <div class="flex event activity">
-                    <div class="circle"></div>
-                    <p>Mount Haleakala</p>
-                </div>
+
+            <div class="field span-1">
+                <label>Duration</label>
+                <p>42m</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 27</div>
-                <h3 class="header">Saturday</h3>
-                <hr>
-                <div class="flex event activity">
-                    <div class="circle"></div>
-                    <p>Travel with Local</p>
-                </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>HNL to OGG</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 28</div>
-                <h3 class="header">Sunday</h3>
-                <hr>
-                <div class="flex event activity">
-                    <div class="circle"></div>
-                    <p>Road to Hana</p>
-                </div>
+            <div class="field span-1">
+                <label>Seats</label>
+                <p>7A, 7B</p>
             </div>
+
         </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 29</div>
-                <h3 class="header">Monday</h3>
-                <hr>
-                <div class="flex event activity">
-                    <div class="circle"></div>
-                    <p>Helicopter Tour</p>
-                </div>
+
+        <input id="toggle-5" type="checkbox" class="hidden" checked />
+        <label for="toggle-5" class="span-7 divider hotel">
+            <div>Hotel in Oahu</div>
+             <p class="spacer"></p>
+        </label>
+        <div class="col-6-layout" id="section-5">
+            <div class="span-6 header">Aulani, A Disney Resort & Spa</div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>7395238092XW2</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>Apr 30</div>
-                <h3 class="header">Tuesday</h3>
-                <hr>
-                <div class="flex event hotel">
-                    <div class="circle"></div>
-                    <p>The Ritz-Carlton</p>
-                </div>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>May 2 - May 9, 2019</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 01</div>
-                <h3 class="header">Wednesday</h3>
-                <hr>
-                <div class="flex event activity">
-                    <div class="circle"></div>
-                    <p>Snorkel Trip</p>
-                </div>
+            <div class="field span-1">
+                <label>Check In Time</label>
+                <p>4:00 PM</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 02</div>
-                <h3 class="header">Thursday</h3>
-                <hr>
-                <div class="flex event flight">
-                    <div class="circle"></div>
-                    <p>1:16p-1:58p</br> OGG to HNL</p>
-                </div>
-                <div class="flex event hotel">
-                    <div class="circle"></div>
-                    <p>Aulani</p>
-                </div>
+            <div class="field span-1">
+                <label>Check Out Time</label>
+                <p>11:00 AM</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 03</div>
-                <h3 class="header">Friday</h3>
-                <hr>
-                <p></p>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>92-1185 Ali'inui Dr, Kapolei, HI 96707</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 04</div>
-                <h3 class="header">Saturday</h3>
-                <hr>
-                <p></p>
+
+            <div class="field span-1">
+                <label>Phone Number</label>
+                <p>(866)443-4763</p>
             </div>
+
         </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 05</div>
-                <h3 class="header">Sunday</h3>
-                <hr>
-                <p></p>
+
+        <input id="toggle-6" type="checkbox" class="hidden" checked/>
+        <label for="toggle-6" class="span-7 divider flight">
+            <div>Flight to New York</div>
+             <p class="spacer"></p>
+        </label>
+        <div class="col-6-layout" id="section-6">
+
+            <div class="span-6 header">Hawaiian Airlines Flight #4</div>
+
+            <div class="field span-1">
+                <label>Confirmation</label>
+                <p>DMOSPX4</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 06</div>
-                <h3 class="header">Monday</h3>
-                <hr>
-                <p></p>
+            <div class="field span-1">
+                <label>Date</label>
+                <p>May 9, 2019 (+1 Day)</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 07</div>
-                <h3 class="header">Tuesday</h3>
-                <hr>
-                <p></p>
+            <div class="field span-1">
+                <label>Time</label>
+                <p>3:10pm</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 08</div>
-                <h3 class="header">Wednesday</h3>
-                <hr>
-                <p></p>
+
+            <div class="field span-1">
+                <label>Duration</label>
+                <p>9hr 45m</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 09</div>
-                <h3 class="header">Thursday</h3>
-                <hr>
-                <div class="flex event flight">
-                    <div class="circle"></div>
-                    <p>3:10p-6:55a</p>
-                </div>
+            <div class="field span-1">
+                <label>Location</label>
+                <p>HNL to JFK</p>
             </div>
-        </div>
-        <div class="span-1  date">
-            <div class="list">
-                <div>May 10</div>
-                <h3 class="header">Friday</h3>
-                <hr>
-                <div class="flex event flight">
-                    <p>HNL to JFK</p>
-                </div>
+            <div class="field span-1">
+                <label>Seats</label>
+                <p>17A, 17B</p>
             </div>
+
+
         </div>
-        <div class="span-1  date">
-            <div class="list fade">
-                <div>May 11</div>
-                <h3 class="header">Saturday</h3>
-                <hr>
-            </div>
-        </div>
+    </div>
+
+
     </div>
 
 </body>
