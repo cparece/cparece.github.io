@@ -85,27 +85,27 @@
 }
 
 //mixins for expand and collapsing sections
-@mixin toggle() {
-    //for loop
-    @for $number from 1 through 10 {
-        #toggle-#{$number} {
-            ~#section-#{$number} {
-                display: none;
-                transition: display 0.5s;
-            }
-            // Removed due to unsolved bug
-            // ~.divider::after {
-            //     content: "\f105";
-            // }
-            &:checked {
-                ~#section-#{$number} {
-                    display: grid;
-                }
-                // Removed due to unsolved bug
-                // ~.divider::after {
-                //     content: "\f106";
-                // }
-            }
-        }
-    }
-}
+// @mixin toggle() {
+//     //for loop
+//     @for $number from 1 through 10 {
+//         #toggle-#{$number} {
+//             ~#section-#{$number} {
+//                 display: none;
+//                 transition: display 0.5s;
+//             }
+//             // Removed due to unsolved bug
+//             // ~.divider::after {
+//             //     content: "\f105";
+//             // }
+//             &:checked {
+//                 ~#section-#{$number} {
+//                     display: grid;
+//                 }
+//                 // Removed due to unsolved bug
+//                 // ~.divider::after {
+//                 //     content: "\f106";
+//                 // }
+//             }
+//         }
+//     }
+// }

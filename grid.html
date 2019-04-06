@@ -2,6 +2,36 @@
 
 <!DOCTYPE html>
 <html>
+<style>
+    .container {
+        --columns: 12;
+        /* number of columns in the grid system */
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .column {
+        --width: 0;
+        /* default value */
+        background-color: pink;
+        flex-basis: calc(var(--width) / var(--columns) * 100%);
+    }
+    /* sections */
+    
+    .header {
+        --width: 12;
+    }
+    
+    .content {
+        --width: 8;
+    }
+    
+    .sidebar {
+        --width: 4;
+    }
+</style>
 
 <head>
     <meta charset- "UTF-8">
@@ -9,8 +39,21 @@
     <link rel="stylesheet" href="grid-system.css">
 </head>
 
+<div class="container">
+    <header class="header column">
+        .header
+    </header>
+    <main class="content column">
+        .content
+    </main>
+    <aside class="sidebar column">
+        .sidebar
+    </aside>
+</div>
+
 <body class="test">
     <div class="container">
+        <header class="column">HEADER</header>
         <div class="item nav">
             <div class="content">NAV</div>
         </div>

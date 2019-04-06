@@ -1,0 +1,121 @@
+.content {
+    padding: $padding-sm;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    --columns: 12;
+    --width-default: 0;
+    --width: var(--width-mobile, var(--width-default));
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+
+/* sections */
+
+header {
+    --width-mobile: 12;
+    padding-bottom: 20px;
+}
+
+h2 {
+    --width-mobile: 8;
+}
+
+.date {
+    --width-mobile: 12;
+    --width-desktop: calc(var(--columns) / 7);
+    --width: calc(var(--columns) / 7);
+}
+
+.divider,
+h1,
+.col-12-layout {
+    --width-mobile: 12;
+}
+
+.col-6-layout {
+    --width-mobile: 12;
+    --width-desktop: 6;
+}
+
+.header {
+    --width-mobile: 12;
+}
+
+.field {
+    --width-mobile: 6;
+    --width-tablet: 4;
+    --width-desktop: 3;
+}
+
+.small {
+    .column {
+        --columns: 6;
+        --width-default: 0;
+        --width: var(--width-mobile, var(--width-default));
+        flex-basis: calc(var(--width) / var(--columns) * 100%);
+    }
+    .header,
+    img {
+        --width-mobile: 6;
+    }
+    .field {
+        --width-mobile: 2;
+    }
+}
+
+.column.container.small {
+    --width-mobile: 6;
+    --width-tablet: 3;
+    --width-desktop: 3;
+}
+
+@media (min-width: 0px) and (max-width: 650px) {
+    .column,
+    .date {
+        --width: var(--width-mobile, var(--width-default));
+        .list {
+            margin: $padding-m;
+        }
+    }
+    header {
+        padding: $padding-m;
+    }
+    .column.container.small {
+        --width: var(--width-mobile, var(--width-default));
+    }
+}
+
+//slightly adjusted breakpoints from standard
+@media (min-width: 650px) and (max-width: 800px) {
+    .column,
+    .date {
+        --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
+        .list {
+            margin: 0;
+        }
+    }
+    .column.container.small {
+        --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
+    }
+}
+
+@media (min-width: 800px) {
+    .column,
+    .date {
+        --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
+        .list {
+            margin: 0;
+        }
+    }
+    .column.container.small {
+        --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
+    }
+}
