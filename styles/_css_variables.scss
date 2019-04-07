@@ -1,0 +1,82 @@
+    @import "_palette.scss";
+     :root {
+        //fonts
+        --rem-units: 1.225rem;
+        --base-rem: 1rem;
+        --base-size: 16px;
+        --font-xxs: calc(var(--font-xs) / var(--rem-units));
+        --font-xs: calc(var(--font-sm) / var(--rem-units));
+        --font-sm: var(--base-rem);
+        --font-m: calc(var(--font-sm) * var(--rem-units));
+        --font-lg: calc(var(--font-m) * var(--rem-units));
+        --font-xl: calc(var(--font-lg) * var(--rem-units));
+        --font-family: 'Open Sans';
+        --font-family-02: 'Abril Fatface', cursive;
+        --weight-light: 200;
+        --weight-regular: 400;
+        --weight-bold: 600;
+        --caps: uppercase;
+        // border radius
+        --radius: 2px;
+        --circle: 50%;
+        // padding and margin
+        --padding-sm: var(--base-rem);
+        --padding-base: --padding-xs: calc(var(--padding-sm) - (var(--padding-base) * 3));
+        --padding-m: calc(var(--padding-sm) + var(--padding-base));
+        --padding-lg: calc(var(--padding-m) + var(--padding-base));
+        --padding-xl: calc(var(--padding-lg) + var(--padding-base));
+        --clear: 0;
+        --gutter: calc(var(--base-rem) * 8);
+        --fade: .25;
+        --list-height: 200px;
+        --dashed-item: 1px dashed $color07;
+        //     // unique colors
+        //     --selected: --color05;
+        //     --hover: darken(--selected, 5%);
+        //     --nav-bg: --color07;
+        //     --flight-color: --color08;
+        //     --hotel-color: --color06;
+        //     --activity-color: --accent05;
+        //     // base scales
+        //     --base: 16px;
+        //     --base-rem: 1rem; //need rems to calculate fonts
+        //     // fonts
+        //     // --rem-units: 1.225rem;
+        //     // --font-xxs: calc(--base-rem * (--rem-units / 3)); //operator
+        //     // --font-xs: calc(--base-rem * (--rem-units / 2)); //operator
+        //     // --font-sm: --base-rem;
+        //     // --font-m: calc(--base-rem * --rem-units); //operator
+        //     // --font-lg: calc(--font-m * --rem-units); //operator
+        //     // --font-xl: calc(--font-lg * (--rem-units*2)); //operator
+        //     // box shadows
+        //     --box-shadow: 1px 1px 2px --color07;
+        //     --box-shadow-img: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        //     // img 
+        //     --img-filter: saturate(3);
+        //     // extend for image
+        //     %img {
+        //         width: 100%;
+        //         box-shadow: --box-shadow-img;
+        //         filter: --img-filter;
+        //         border-radius: --radius;
+        //     }
+        //     // borders
+        //     --dashed-item: 1px dashed --color07;
+        //     --underline: .5px solid --color08;
+        //     //heights
+        //     --list-height: 200px;
+        //     --window: 100vh;
+        //     //opacity
+        //     --fade: .25;
+        //     //media queries
+        //     --breakpoint-small: 768px;
+        //     --breakpoint-medium: 1200px;
+        //     // css grid
+        //     --columns: 7;
+        //     //extend for flex
+        //     %flex {
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //     }
+    }

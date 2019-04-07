@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 .divider, nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,57 +12,105 @@
           align-items: center;
 }
 
-html {
-  font-size: 14px;
+:root {
+  --rem-units: 1.225rem;
+  --base-rem: 1rem;
+  --base-size: 16px;
+  --font-xxs: calc(var(--font-xs) / 1.225);
+  --font-xs: calc(var(--font-sm) / 1.225);
+  --font-sm: var(--base-rem);
+  --font-m: calc(var(--font-sm) * 1.225);
+  --font-lg: calc(var(--font-m) * 1.225);
+  --font-xl: calc(var(--font-lg) * 1.225);
+  --font-family: 'Open Sans';
+  --font-family-02: 'Abril Fatface', cursive;
+  --weight-light: 200;
+  --weight-regular: 400;
+  --weight-bold: 600;
+  --caps: uppercase;
+  --radius: 2px;
+  --circle: 50%;
+  --padding-sm: var(--base-rem);
+  --padding-xs: calc(var(--padding-sm) - (.2rem * 3));
+  --padding-m: calc(var(--padding-sm) + .2rem);
+  --padding-lg: calc(var(--padding-m) + .2rem);
+  --padding-xl: calc(var(--padding-lg) + .2rem);
+  --clear: 0;
+  --gutter: calc(var(--base-rem) * 8);
 }
 
 html body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--weight-light);
+  margin: var(--clear);
   background-color: #041f1f;
   color: #fff;
+  font-size: var(--base-size);
 }
 
 html body h1 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
 html body h2 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
 html body h3 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
 html body h4 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
 html body h5 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
 html body h6 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: 200;
   margin: 0;
 }
 
+@media (max-width: 1200px) {
+  html body {
+    font-size: var(--font-xs);
+  }
+}
+
+@media (max-width: 768px) {
+  html body {
+    font-size: var(--font-xxs);
+  }
+}
+
 html body h1 {
-  padding: 1.2rem 0;
-  font-size: 2rem;
+  padding: var(--padding-m) var(--clear);
+  font-size: var(--font-xl);
+}
+
+@media (max-width: 1200px) {
+  html body h1 {
+    font-size: var(--font-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  html body h1 {
+    font-size: var(--font-m);
+  }
 }
 
 html body h1,
@@ -71,13 +119,25 @@ html body h3 {
 }
 
 html body h2 {
-  font-size: 1.25rem;
+  font-size: var(--font-m);
   color: #a117a6;
-  padding: 0;
+  padding: var(--clear);
+}
+
+@media (max-width: 1200px) {
+  html body h2 {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  html body h2 {
+    font-size: var(--font-xs);
+  }
 }
 
 html body p {
-  margin: 0;
+  margin: var(--clear);
 }
 
 html body label {
@@ -87,32 +147,47 @@ html body label {
 
 html body .col-6-layout header {
   color: #a117a6;
-  font-weight: 600;
-  font-family: "Roboto Slab", sans-serif;
+  font-weight: var(--weight-bold);
+  font-family: var(--font-family-02);
+}
+
+html .divider {
+  font-weight: var(--weight-regular);
+  background-color: #e5df3e;
+  color: #041f1f;
+  font-family: var(--font-family-02);
+  text-transform: var(--caps);
+  font-size: var(--font-m);
+}
+
+@media (max-width: 1200px) {
+  html .divider {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  html .divider {
+    font-size: var(--font-xs);
+  }
 }
 
 .divider {
-  border-radius: 2px;
-  padding: 0.4rem;
-  margin: 0.4rem 0;
-  font-size: 1.25rem;
-  font-weight: 400;
-  background-color: #e5df3e;
-  color: #041f1f;
-  font-family: "Roboto Slab", sans-serif;
-  text-transform: uppercase;
+  border-radius: var(--radius);
+  padding: var(--padding-xs);
+  margin: var(--padding-xs) var(--clear);
   height: 40px;
 }
 
 .divider div {
-  padding: 0.4rem;
+  padding: var(--padding-xs);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 .field {
-  padding: 1.2rem 0;
+  padding: var(--padding-m) var(--clear);
 }
 
 input {
@@ -160,7 +235,7 @@ nav ul li.selected:hover {
 }
 
 .content {
-  padding: 1rem;
+  padding: var(--padding-sm);
 }
 
 .container {
@@ -241,17 +316,30 @@ h1,
   --width-desktop: 3;
 }
 
+.activity {
+  background-color: #a117a6;
+  color: #fff;
+}
+
+.hotel {
+  background-color: #14908b;
+  color: #fff;
+}
+
+.flight {
+  background-color: #0a4c4a;
+  color: #fff;
+}
+
 @media (min-width: 0px) and (max-width: 650px) {
   .column,
   .date {
+    --columns: 1;
     --width: var(--width-mobile, var(--width-default));
   }
   .column .list,
   .date .list {
-    margin: 1.2rem;
-  }
-  header {
-    padding: 1.2rem;
+    margin: var(--padding-m);
   }
   .column.container.small {
     --width: var(--width-mobile, var(--width-default));
@@ -265,7 +353,7 @@ h1,
   }
   .column .list,
   .date .list {
-    margin: 0;
+    margin: var(--clear);
   }
   .column.container.small {
     --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
@@ -279,16 +367,22 @@ h1,
   }
   .column .list,
   .date .list {
-    margin: 0;
+    margin: var(--clear);
   }
   .column.container.small {
     --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
   }
 }
 
+@media only screen and (orientation: landsape) {
+  .container {
+    margin: var(--padding-m);
+  }
+}
+
 .date .list {
   border: 1px dashed #117976;
-  padding: 1rem;
+  padding: var(--padding-sm);
   background: #041b1a;
   min-height: 200px;
 }
@@ -301,7 +395,7 @@ h1,
 
 @media only screen and (max-width: 768px) {
   .date .list h3 {
-    padding: 0.4rem 0 !important;
+    padding: var(--padding-xs) 0 !important;
   }
 }
 
@@ -317,8 +411,8 @@ h1,
 
 .date .list .event {
   border-radius: 2px;
-  padding: 0.4rem;
-  margin-bottom: 0.4rem;
+  padding: var(--padding-xs);
+  margin-bottom: var(--padding-xs);
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;

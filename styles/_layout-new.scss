@@ -1,5 +1,5 @@
 .content {
-    padding: $padding-sm;
+    padding: var(--padding-sm);
 }
 
 .container {
@@ -77,16 +77,27 @@ h1,
     --width-desktop: 3;
 }
 
+//style for events
+.activity {
+    @include event(activity);
+}
+
+.hotel {
+    @include event(hotel);
+}
+
+.flight {
+    @include event(flight);
+}
+
 @media (min-width: 0px) and (max-width: 650px) {
     .column,
     .date {
+        --columns: 1;
         --width: var(--width-mobile, var(--width-default));
         .list {
-            margin: $padding-m;
+            margin: var(--padding-m);
         }
-    }
-    header {
-        padding: $padding-m;
     }
     .column.container.small {
         --width: var(--width-mobile, var(--width-default));
@@ -99,7 +110,7 @@ h1,
     .date {
         --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
         .list {
-            margin: 0;
+            margin: var(--clear);
         }
     }
     .column.container.small {
@@ -112,10 +123,16 @@ h1,
     .date {
         --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
         .list {
-            margin: 0;
+            margin: var(--clear);
         }
     }
     .column.container.small {
         --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
+    }
+}
+
+@media only screen and (orientation: landsape) {
+    .container {
+        margin: var(--padding-m);
     }
 }

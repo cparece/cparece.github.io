@@ -1,29 +1,17 @@
 .divider {
-    border-radius: $radius;
-    padding: $padding-xs;
-    margin: $padding-xs $clear;
-    $color: $accent-alt-05; // background color
+    border-radius: var(--radius);
+    padding: var(--padding-xs);
+    margin: var(--padding-xs) var(--clear);
     @extend %flex;
-    font-size: $font-m;
-    font-weight: $weight-regular;
-    @include font-color($color);
-    font-family: $font-family-02;
-    text-transform: $caps;
     height: 40px;
     div {
-        padding: $padding-xs;
+        padding: var(--padding-xs);
         align-self: center;
     }
-    // Removed due to unsolved bug
-    // &::after {
-    //     content: "\f105";
-    //     @include font-awesome();
-    //     padding-right: $padding-m;
-    // }
 }
 
 .field {
-    padding: $padding-m $clear;
+    padding: var(--padding-m) var(--clear);
 }
 
 input {

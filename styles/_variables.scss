@@ -7,7 +7,7 @@ $flight-color: $color08;
 $hotel-color: $color06;
 $activity-color: $accent05;
 // base scales
-$base: 14px;
+$base: 16px;
 $base-rem: 1rem; //need rems to calculate fonts
 // padding and margin
 $padding-units: .2rem;
@@ -21,15 +21,16 @@ $clear: 0;
 $radius: 2px;
 $circle: 50%;
 // fonts
-$rem-units: .25rem;
-$font-sm: $base-rem;
-$font-m: $base-rem+$rem-units; //operator
-$font-lg: $font-m+$rem-units; //operator
-$font-xl: $font-lg+($rem-units*2); //operator
-$font-family: 'Montserrat',
-sans-serif;
-$font-family-02:'Roboto Slab',
-sans-serif;
+// $rem-units: 1.225rem;
+// $font-xxs: calc($base-rem * ($rem-units / 3)); //operator
+// $font-xs: calc($base-rem * ($rem-units / 2)); //operator
+// $font-sm: $base-rem;
+// $font-m: calc($base-rem * $rem-units); //operator
+// $font-lg: calc($font-m * $rem-units); //operator
+// $font-xl: calc($font-lg * ($rem-units*2)); //operator
+$font-family: 'Open Sans';
+$font-family-02:'Abril Fatface',
+cursive;
 $weight-light: 200;
 $weight-regular: 400;
 $weight-bold: 600;
@@ -67,5 +68,3 @@ $gutter: $base-rem * 8;
     justify-content: center;
     align-items: center;
 }
-
-// toggle

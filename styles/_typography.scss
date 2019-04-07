@@ -1,27 +1,45 @@
 html {
-    font-size: $base;
     body {
-        font-family: $font-family;
-        font-weight: $weight-light;
-        margin: $clear;
+        font-family: var(--font-family);
+        font-weight: var(--weight-light);
+        margin: var(--clear);
         $color: $bg-color01; // background color
         @include font-color($color);
         @include header() {}
+        font-size: var(--base-size);
+        @media (max-width: 1200px) {
+            font-size: var(--font-xs);
+        }
+        @media (max-width: 768px) {
+            font-size: var(--font-xxs);
+        }
         h1 {
-            padding: $padding-m $clear;
-            font-size: $font-xl;
+            padding: var(--padding-m) var(--clear);
+            font-size: var(--font-xl);
+            @media (max-width: 1200px) {
+                font-size: var(--font-lg);
+            }
+            @media (max-width: 768px) {
+                font-size: var(--font-m);
+            }
         }
         h1,
         h3 {
             color: $color03;
         }
         h2 {
-            font-size: $font-m;
+            font-size: var(--font-m);
             color: $accent;
-            padding: $clear;
+            padding: var(--clear);
+            @media (max-width: 1200px) {
+                font-size: var(--font-sm);
+            }
+            @media (max-width: 768px) {
+                font-size: var(--font-xs);
+            }
         }
         p {
-            margin: $clear;
+            margin: var(--clear);
         }
         label {
             color: $accent-alt-01;
@@ -30,9 +48,23 @@ html {
         .col-6-layout {
             header {
                 color: $accent;
-                font-weight: $weight-bold;
-                font-family: $font-family-02;
+                font-weight: var(--weight-bold);
+                font-family: var(--font-family-02);
             }
+        }
+    }
+    .divider {
+        font-weight: var(--weight-regular);
+        $color: $accent-alt-05; // background color
+        @include font-color($color);
+        font-family: var(--font-family-02);
+        text-transform: var(--caps);
+        font-size: var(--font-m);
+        @media (max-width: 1200px) {
+            font-size: var(--font-sm);
+        }
+        @media (max-width: 768px) {
+            font-size: var(--font-xs);
         }
     }
 }

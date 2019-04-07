@@ -3,12 +3,12 @@
     @include grid();
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: auto;
-    padding: $clear $gutter $gutter $gutter;
+    padding: var(--clear) var(--gutter) var(--gutter) var(--gutter);
     @include media-query(small) {
-        padding: $padding-lg;
+        padding: var(--padding-lg);
     }
     @include media-query(medium) {
-        padding: $clear $padding-m $padding-m $padding-m;
+        padding: var(--clear) $padding-m $padding-m $padding-m;
     }
     @include layout-span() {
         @include media-query(small) {
@@ -17,20 +17,20 @@
     }
     .col-6-layout {
         @include grid();
-        grid-gap: $padding-xs;
+        grid-gap: var(--padding-xs);
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         grid-column: span $columns;
-        padding: $padding-xs;
+        padding: var(--padding-xs);
         div.img {
-            padding: $padding-sm;
+            padding: var(--padding-sm);
         }
     }
     .center {
         align-items: center;
     }
     header {
-        margin: $clear;
+        margin: var(--clear);
     }
     img {
         @extend %img;

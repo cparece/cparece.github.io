@@ -1,16 +1,16 @@
 .date {
     //nesting
     .list {
-        border: $dashed-item;
-        padding: $padding-sm;
+        border: var(--dashed-item);
+        padding: var(--padding-sm);
         background: $bg-color02;
-        min-height: $list-height;
+        min-height: var(--list-height);
         @include media-query(small) {
             min-height: auto;
         }
         h3 {
             @include media-query(small) {
-                padding: $padding-xs 0 !important;
+                padding: var(--padding-xs) 0 !important;
             }
         }
         hr {
@@ -20,14 +20,14 @@
             }
         }
         .event {
-            border-radius: $radius;
-            padding: $padding-xs;
-            margin-bottom: $padding-xs;
+            border-radius: var(--radius);
+            padding: var(--padding-xs);
+            margin-bottom: var(--padding-xs);
             justify-content: left;
         }
     }
 }
 
 .fade {
-    opacity: $fade;
+    opacity: var(--fade);
 }
