@@ -1,0 +1,20 @@
+{
+    "name": "cparece.github.io",
+    "version": "1.0.0",
+    "description": "Your name:  <b>Cortney Stauffer (Parece)</b>",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --watch styles -o styles"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cparece/cparece.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cparece/cparece.github.io/issues"
+    },
+    "homepage": "https://github.com/cparece/cparece.github.io#readme"
+}
