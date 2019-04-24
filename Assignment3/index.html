@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="uikit-3.0.3/css/uikit.min.css" />
+    <script src="uikit-3.0.3/js/uikit.min.js"></script>
+    <script src="uikit-3.0.3/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .test {
+            background: red;
+        }
+    </style>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Nav 1</a></li>
+                    <li><a href="" uk-icon="icon: chevron-down; ratio: .75">Nav 2</a></li>
+                    <div class="uk-width-large" uk-dropdown="mode: click; offset: -20">
+                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <li><a href="">Nav 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="uk-container uk-padding">
+        <h1 class="uk-heading-line uk-text-center"><span>Disney Adventures Blog</span></h1>
+
+        <div class="uk-grid-large uk-child-width-expand uk-grid-match uk-margin" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body  uk-padding-small">
+                    <div class="uk-text-uppercase uk-text-primary">Latest News</div>
+                    <ul uk-accordion="collapsible: false">
+                        <li>
+                            <a class="uk-accordion-title" href="#">Unique Coca-Cola Packaging at Galaxy's Edge</a>
+                            <div class="uk-accordion-content">
+                                <p>
+                                    There will be specialty themed Coca-Cola beverages throughout Walt Disney's Worlds new land Star Wars: Galaxy's Edge. The attention to detail within this immersive experience is unreal. Disney is really starting to take this to another level. Get ready
+                                    for the opening of this experience in fall 2019.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Skyliner Update</a>
+                            <div class="uk-accordion-content">
+                                <p>
+                                    Disney's latest details are revealed on the Skyliner that will link several parks and resorts across Walt Disney World. The gondolas that will soar across the sky are now called "guest cabins". These cabins have a max capacity of 10 guests, with bench
+                                    seating. Each gondola will be themed based on classic Disney favorites, as well as, Marvel Studio and LucasFilms.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Lion King Trailer</a>
+                            <div class="uk-accordion-content">
+                                <p>
+                                    The latest trailer for the Live Action version of the lion king has been released. THe iconic movie was originally created 25 years ago, this new live action take on the classic movie has people in awe. The amount of detail in the trailer is stunning.
+                                    The movie will hit theaters on July 19, 2019.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove ">
+                    <iframe width="100%" src="https://www.youtube.com/embed/JEr5O1tMvnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article class="uk-article uk-padding-small ">
+                        <div class="uk-text-uppercase uk-text-primary">Travel Day to Disney World, Exploring Animal Kingdom and Chef Arts!</div>
+                        <p class="uk-article-meta uk-margin-small ">Day 1: Travel Day | January 2019 | <a href="https://www.youtube.com/embed/JEr5O1tMvnQ">YouTube</a></p>
+                        <p class="uk-text-lead uk-text-small uk-margin-small ">We're off to Walt Disney World!!! Our morning started early at 3am so we could get to Disney early, check out our room at Pop Century then head to Animal Kingdom for a day full of fun and exploring! We then were off to Disney Springs
+                            for our favorite dinner spot, Chef Art Smiths Homecoming!
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
+
+                        <ul class="uk-slideshow-items uk-height-large">
+                            <li>
+                                <img data-src="https://images.pexels.com/photos/1024975/pexels-photo-1024975.jpeg?cs=srgb&dl=affair-anniversary-asad-1024975.jpg&fm=jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !ul > :last-child, !* +*">
+                                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                    <div class="uk-margin-remove">
+                                        <article class="uk-comment">
+                                            <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <img class="uk-comment-avatar" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" width="25" height="25" alt="">
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                                        <li><a href="#">12 days ago</a></li>
+                                                    </ul>
+                                                </div>
+                                            </header>
+                                            <div class="uk-comment-body">
+                                                <p>text</p>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <img data-src="https://www.wallpaperup.com/uploads/wallpapers/2014/10/06/473386/c6b691f95a3bbebd5d9eaf037a396dbc-700.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !* +*">
+                            </li>
+                            <li>
+                                <img data-src="https://s2.best-wallpaper.net/wallpaper/2880x1800/1610/Palma-Maldives-sunset-beach-sea-palm-tree_2880x1800.jpg" width="1800" height="1200" alt="" uk-cover uk-img="target: !* -*, !ul > :first-child">
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="uk-section uk-section-primary uk-padding">
+
+        <div class="uk-child-width-expand" uk-grid>
+            <div>
+                <div uk-grid>
+                    <div class="uk-width-auto@m">
+                        <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                            <li><a href="#" class="uk-text-right">Active</a></li>
+                            <li><a href="#" class="uk-text-right">Item</a></li>
+                            <li><a href="#" class="uk-text-right">Item</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand">
+                        <ul id="component-tab-left" class="uk-switcher">
+                            <li>
+                                <article class="uk-article">
+                                    <h1 class="uk-article-title">Title</h1>
+                                    <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="uk-article">
+                                    <h1 class="uk-article-title">Title</h1>
+                                    <p class="uk-article-meta">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="uk-article">
+                                    <h1 class="uk-article-title">Title</h1>
+                                    <p class="uk-article-meta">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.
+                                    </p>
+                                </article>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- 
+            TODO: 
+            2-3 pages using only UIKit
+            
+            Grid with gutter modifiers, nested grid, divider modifier, match height, wrap multiple rows, grid and flex
+            
+            Article - done
+            Comment - done
+            Cover - done
+            Section - done
+            Switcher - done
+
+            Navigation Bar on all pages of the site, responsive to width changes, can be off canvas on mobile
+
+            Accordion -done
+            Breadcrumb - use on page 2
+
+               <ul class="uk-breadcrumb">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><span></span></li>
+                </ul>
+
+
+            Dropdown - done
+            Iconnav - skip, used one icon though
+            Scroll - use on page 2
+            Switcher - done
+            Tab - done
+
+            Style atleast 3 items: alert, animation, background, badge, button, column, description list, divider, icon, label, marker, overaly, parallax, svg, table, thumnav, transition
+
+            Form with atleast 4 form fields plus submit button
+            Forms should have approprirate data type
+            style with size modifiers, width modifiers, blank modifier, form layout, form and icons, form and grid
+            Forms should be accessibile, modify the code to include labels, people, etc.
+
+            Javascript widget:
+            Lightbox
+            Modal
+            Notification
+            Scrollspy
+            Slideshow
+
+            Sass: change the look of the UIKit, change 2 variables, 2 new styles, 2 existing styles, and compile.
+
+          -->
+
+</body>
+
+</html>
