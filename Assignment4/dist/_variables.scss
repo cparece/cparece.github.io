@@ -1,0 +1,10 @@
+//fonts
+$base: 12px;
+$base-rem: 1rem;
+$rem-units: 1.225rem;
+$font-xxs: calc($base-rem * (1.225rem / 3));
+$font-xs: calc($base-rem * (1.225rem / 2));
+$font-sm: $base-rem;
+$font-m: calc($base-rem * 1.225rem);
+$font-lg: calc($font-m * 1.225rem);
+$font-xl: calc($font-lg * (1.225rem*2));

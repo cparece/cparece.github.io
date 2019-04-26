@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="uikit/dist/css/uikit.min.css" /> -->
+    <link rel="stylesheet" href="custom.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="index.html">Home</a></li>
+                    <li><a href="" uk-icon="icon: chevron-down; ratio: .75">Archives</a></li>
+                    <div class="uk-width-large" uk-dropdown="mode: click; offset: -20">
+                        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-nav-header">Blog Posts</li>
+                                    <li><a href="#">January 12, 2019</a></li>
+                                    <li><a href="#">January 13, 2019</a></li>
+                                    <li><a href="#">January 14, 2019</a></li>
+                                    <li><a href="#">January 14, 2019</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-nav-header">Dining Reviews</li>
+                                    <li><a href="">Disney Dining Plan</a></li>
+                                    <li><a href="">Chef Mickey's</a></li>
+                                    <li><a href="">Whispering Canyon</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <li><a href="form.html">Request a Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-container uk-padding">
+        <div class="uk-section uk-section-primary uk-padding">
+
+            <div class="uk-child-width-expand" uk-grid>
+                <div>
+                    <div uk-grid>
+                        <div class="uk-width-auto@m">
+                            <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                <li><a href="#" class="uk-text-right">Basic Information</a></li>
+                                <li><a href="#" class="uk-text-right">Trip Details</a></li>
+                                <li><a href="#" class="uk-text-right">Submit</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-expand">
+                            <ul id="component-tab-left" class="uk-switcher">
+                                <li>
+                                    <article class="uk-article">
+                                        <h1 class="uk-article-title">Request a Quote</h1>
+                                        <p class="uk-article-meta">
+                                            Looking to book your next vacation? Fill out the form and submit your information for a detailed quote.
+                                            <form class="uk-form-stacked uk-grid-small" uk-grid>
+                                                <div class="uk-width-1-2@m">
+                                                    <label class="uk-form-label" for="name">Name</label>
+                                                    <div class="uk-inline">
+                                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                        <input class="uk-input uk-form-small uk-form-width-large" id="name" type="text" placeholder="First & Last Name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="uk-width-1-4@m">
+                                                    <label class="uk-form-label" for="phone">Phone Number</label>
+                                                    <input class="uk-input uk-form-small uk-form-width-medium" id="phone" type="tel" placeholder="(000) 000-0000">
+                                                </div>
+
+
+                                                <div class="uk-width-1-4@m">
+                                                    <label class="uk-form-label" for="email">Email</label>
+                                                    <input class="uk-input uk-form-small uk-form-width-medium" id="email" type="email" placeholder="example@example.com">
+                                                </div>
+
+                                                <div class="uk-width-1-4@m">
+                                                    <label class="uk-form-label" for="contact">Best way to contact</label>
+                                                    <select class="uk-select uk-form-small" id="contact">
+                                                                <option>Text</option>
+                                                                <option>Call</option>
+                                                                <option>Email</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </p>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="uk-article">
+                                        <h1 class="uk-article-title">Request a Quote</h1>
+                                        <form>
+                                            <div class="uk-width-1-4@m">
+                                                <label class="uk-form-label" for="destination">Destination</label>
+
+                                                <div class="uk-form-controls">
+                                                    <label><input class="uk-radio" type="radio" name="destination">Walt Disney World</label><br>
+                                                    <label><input class="uk-radio" type="radio" name="destination">Disneyland</label>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-4@m">
+                                                <label class="uk-form-label" for="year">Time of year</label>
+                                                <select class="uk-select uk-form-small" id="year">
+                                                                <option>Winter</option>
+                                                                <option>Spring</option>
+                                                                <option>Summer</option>
+                                                                <option>Fall</option>
+
+                                                    </select>
+                                            </div>
+
+                                        </form>
+
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="uk-article">
+                                        <h1 class="uk-article-title">Request a Quote</h1>
+                                        <p class="uk-article-meta">Thank you for your interest. Please click submit below and someone will be in contact with you shortly.
+                                        </p><button class="uk-button uk-button-primary">Submit</button>
+
+                                    </article>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

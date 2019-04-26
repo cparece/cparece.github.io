@@ -1,0 +1,104 @@
+Your name: Cortney Stauffer
+
+1. Provide a link to the first page of your website: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+
+My site looks the way I want on (choose one): Mac  
+
+With this browser (choose one): Chrome 
+
+UIKIT (77 points)
+
+2. Grid: provide an example of a section of your website that has grid incorporated with responsive features.
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+Line numbers: 55
+
+Special grid feature used (choose the one you used): gutter modifiers, nested grid, divider modifier, match height, wrap multiple rows, "Grid and flex" 
+HTML line numbers: matching height, gutter modifiers 55
+
+3. Other Layout Structures
+The widget you used is: Article, Comment, Cover, Section, Switcher.
+URL: https://cparece.github.io/cparece.github.io/Assignment3/form.html
+HTML line numbers: Article 69, Switcher 66, Section 53
+
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+HTML line numbers: Cover 108
+
+4. Navigation bar
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+HTML line numbers: 14
+Widgets used: (example: nav, navbar, width, visibility, etc) Sticky Navbar
+
+5. Second navigational element
+The widget you used is: Accordion, Breadcrumb, Dropdown, Iconnav, Scroll, Switcher, Tab. 
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+HTML line numbers: Dropdown Nav 20
+
+6. Styling: 3 instances
+Choose from: Alert, Animation, Background, Badge, Button, Column, Description List, Divider, Icon, Label, Marker, Overlay, Parallax, SVG, Table, Thumbnav, Transition. 
+
+a. Choice 1: Background Primary
+URL: https://cparece.github.io/cparece.github.io/Assignment3/form.html
+HTML line numbers: 46
+
+b. Choice 2: Animation
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+HTML line numbers: 89
+
+c. Choice 3: Button Primary
+URL: https://cparece.github.io/cparece.github.io/Assignment3/form.html
+HTML line numbers: 115
+
+7. Form
+URL: https://cparece.github.io/cparece.github.io/Assignment3/form.html
+HTML line numbers: 72
+
+The 4 form fields should be obvious in the HTML, but if they are not, describe. Submit button does not count as a form field!
+We are checking for labels and the appropriate type of field for the data.
+
+Input type, Input email, Input phone, Dropdown, Radio Button
+
+
+1 example of form styling you chose: size modifiers, width modifiers, blank modifier, form layout, form and icons, form and grid
+HTML line numbers: uk-form-small 109, uk-form-width-medium 80, uk-form-stacked 72
+
+8. JavaScripty Widgets
+URL: https://cparece.github.io/cparece.github.io/Assignment3/index.html
+HTML line numbers: Slideshow 104
+The widget you chose is: Lightbox, Modal, Notification, Scrollspy, Slideshow.
+
+9. Sass variable #1: $global-muted-background
+Partial file name: custom.scss
+Line number: 3
+
+Sass variable #2: $global-border
+Partial file name: custom.scss
+Line number: 4
+
+10: New style #1: .uk-card-default border radius
+Partial file name: custom.scss
+Line number: 8
+
+New style #2: .coco-card-primary box shadow
+Partial file name: custom.scss
+Line number: 10
+
+11. Modified style #1: .uk-button-primary background color
+Partial file name: custom.scss
+Line number: 27
+
+Modified style #2: .uk-button-primary hover color
+Partial file name: custom.scss
+Line number: 32
+
+COMPARISON EXERCISE (22 points)
+Please remember to turn in your paper as described in the assignment.
+
+If you are using Google Docs (or similar), be sure that we have permission to view your URL.
+
+
+
+ABOVE AND BEYOND (11 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, Sass, or JavaScript line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
+
+For the above and beyond portion, I utilized several different types of components, I also tried embedding different widgets together to create a more seemless experience. 
+

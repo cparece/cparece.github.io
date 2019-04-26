@@ -1,0 +1,13 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $base;
+    font-weight: normal;
+    background: $bg-color01;
+    color: $font-color;
+}
+
+.coco {
+    &-header {
+        font-size: $font-lg;
+    }
+}

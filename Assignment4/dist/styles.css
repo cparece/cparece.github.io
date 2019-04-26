@@ -1,0 +1,12 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: #041f1f;
+  color: #fff;
+}
+
+.coco-header {
+  font-size: calc($font-m * 1.225rem);
+}
+/*# sourceMappingURL=styles.css.map */
