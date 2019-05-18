@@ -1,0 +1,75 @@
+/******************************************************
+
+      THESE STYLES ARE JUST USED FOR THE DOC SITE
+
+******************************************************/
+
+.code,
+code {
+    display: inline;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.example {
+    background: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    margin: 4px 20px;
+}
+
+.code-snippet {
+    padding: 5px;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px dashed #cdcdcd;
+    text-align: left !important;
+}
+
+#{$prefix}table {
+    .code::before {
+        @include media-query(small) {
+            content: "Class: ";
+            font-family: $font-family;
+        }
+    }
+}
+
+.framework-header {
+    text-align: center;
+    padding: $padding-xl $padding-xl $padding-xs $padding-xl;
+}
+
+.framework-subheader {
+    text-align: center;
+}
+
+@for $cell from 1 through 6 {
+    .example>#{$prefix}span-#{$cell} {
+        background: #cdcdcd !important;
+        padding: 2px;
+        text-align: center;
+    }
+}
+
+hr {
+    border-color: lighten(map-get($primary, bg), 50);
+    border-style: solid;
+}
+
+.note {
+    font-size: $font-xxs;
+    font-style: italic;
+}
+
+#grid,
+#type,
+#buttons,
+#cards,
+#navigation,
+#table {
+    padding-top: $nav-height + 20px;
+}
+
+h3 {
+    margin: $padding-xl $padding-xl $padding-xl $clear;
+}

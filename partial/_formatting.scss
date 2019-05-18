@@ -1,0 +1,36 @@
+/******************************************************
+
+      FORMATTING
+
+******************************************************/
+
+
+/***** PADDING *****/
+
+@each $key,
+$val in $padding {
+    #{$prefix}padding-#{$key} {
+        padding: #{$val};
+    }
+    #{$prefix}margin-#{$key} {
+        margin: #{$val};
+    }
+}
+
+
+/***** FLEX *****/
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***** OVERRIDES *****/
+
+html,
+body {
+    margin: $clear;
+    padding: $clear;
+}

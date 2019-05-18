@@ -1,0 +1,83 @@
+/******************************************************
+
+      BUTTON STYLING
+
+******************************************************/
+
+#{$prefix} {
+    &btn {
+        background: map-get($alt, bg);
+        color: map-get($alt, text);
+        padding: $padding-default;
+        font-size: $font-default;
+        line-height: $font-default + 6px;
+        font-weight: 600;
+        border-radius: $radius;
+        border: 0px;
+        margin: $padding-default $padding-xs;
+        &:hover {
+            background: lighten(map-get($alt, bg), 20);
+            color: map-get($alt, text);
+            cursor: pointer;
+            box-shadow: $shadow-sm;
+            transition: all 1000ms;
+        }
+        &.disabled {
+            opacity: 0.25;
+            &:hover {
+                cursor: default;
+                background: map-get($default, bg);
+                color: map-get($default, text);
+                box-shadow: none;
+            }
+        }
+        &.primary {
+            background: map-get($primary, bg);
+            color: map-get($primary, text);
+            &:hover {
+                opacity: 0.75;
+                cursor: pointer;
+                box-shadow: $shadow-sm;
+                transition: all 1000ms;
+            }
+            &.disabled {
+                opacity: 0.25;
+                &:hover {
+                    cursor: default;
+                    background: map-get($primary, bg);
+                    color: map-get($primary, text);
+                    box-shadow: none;
+                }
+            }
+        }
+        &.secondary {
+            background: map-get($secondary, bg);
+            color: map-get($secondary, text);
+            &:hover {
+                background: lighten(map-get($secondary, bg), 20);
+                color: map-get($secondary, text);
+                cursor: pointer;
+                box-shadow: $shadow-sm;
+                transition: all 1000ms;
+            }
+            &.disabled {
+                opacity: 0.25;
+                &:hover {
+                    cursor: default;
+                    background: map-get($secondary, bg);
+                    color: map-get($secondary, text);
+                    box-shadow: none;
+                }
+            }
+        }
+        &.raised {
+            box-shadow: $shadow-lg;
+            &:hover {
+                box-shadow: $shadow-lg-darken;
+            }
+        }
+        &.fixed {
+            width: 200px;
+        }
+    }
+}

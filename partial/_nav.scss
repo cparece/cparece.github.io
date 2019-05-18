@@ -1,0 +1,57 @@
+/******************************************************
+
+      NAVIGATION STYLING
+
+******************************************************/
+
+#{$prefix} {
+    &nav {
+        display: grid;
+        background: map-get($default, bg);
+        width: 100%;
+        box-shadow: $shadow-sm;
+        height: $nav-height;
+        @include media-query(small) {
+            position: relative !important;
+            height: 100%;
+        }
+        &.fixed-top {
+            position: fixed;
+            top: 0px;
+        }
+        ul {
+            list-style: none;
+            margin: $clear;
+            padding: $clear;
+            @extend %flex;
+            @include media-query(small) {
+                display: block !important;
+            }
+            li {
+                margin: $padding-default;
+                padding: $padding-xs $padding-m;
+                border-radius: $radius-pill;
+                &:hover {
+                    background: map-get($hover, bg);
+                    color: map-get($hover, text);
+                }
+                a {
+                    color: map-get($default, text);
+                    text-decoration: none;
+                }
+                &#{$prefix}selected {
+                    background: map-get($selected, bg);
+                    color: map-get($selected, text);
+                    &:hover {
+                        background: map-get($selected, bg);
+                        color: map-get($selected, text);
+                    }
+                }
+                &.active {
+                    background: map-get($primary, bg);
+                    color: map-get($primary, text);
+                }
+            }
+        }
+    }
+}

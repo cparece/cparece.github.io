@@ -1,0 +1,40 @@
+/******************************************************
+
+      TABLE STYLING
+
+******************************************************/
+
+#{$prefix} {
+    &table {
+        margin-top: $padding-lg;
+        border: 1px solid $border-default;
+        padding: $clear !important;
+        grid-gap: 0;
+        #{$prefix}header {
+            background: $background-default;
+            font-weight: bold;
+            @include media-query(small) {
+                display: none !important;
+            }
+        }
+        #{$prefix}row {
+            align-items: center;
+            border-bottom: 1px solid $border-default;
+            div:first-child {
+                @include media-query(medium) {
+                    padding-left: $padding-m;
+                }
+                @include media-query(small) {
+                    padding-left: $clear;
+                    font-weight: bold;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+            &#{$prefix}alt {
+                background: map-get($background, alt-row);
+            }
+        }
+    }
+}
