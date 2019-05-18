@@ -4,39 +4,57 @@
 
 ******************************************************/
 
-// Fonts
+
+/***** FONTS *****/
+
 $font-default: map-get($font-size, base);
 $font-family: map-get($font, family);
 $base: 16px;
-// Background Colors
+
+/***** BACKGROUND COLORS *****/
+
 $background-default: map-get($background, base);
 $background-alternate: map-get($background, alt);
 $background-primary: map-get($background, primary);
 $background-secondary: map-get($background, secondary);
 $background-hover: map-get($background, hover);
 $background-selected: map-get($background, selected);
-// Border Colors
+
+/***** BORDERS *****/
+
 $border-default: map-get($background, base);
-// Padding
+
+/***** PADDING/MARGIN *****/
+
 $padding-xs: map-get($padding, xs);
 $padding-sm: map-get($padding, sm);
 $padding-m: map-get($padding, m);
 $padding-lg: map-get($padding, lg);
 $padding-xl: map-get($padding, xl);
 $padding-default: 5px;
-// Media Query Breakpoints
+
+/***** MEDIA QUERY BREAKPOINTS *****/
+
 $breakpoint-sm: map-get($breakpoint, sm);
 $breakpoint-m: map-get($breakpoint, m);
 $breakpoint-lg: map-get($breakpoint, lg);
-// Border Radius
+
+/***** BORDER RADIUS *****/
+
 $radius: map-get($radius, sm);
 $radius-pill: 50px;
-// Override
+
+/***** OVERRIDE *****/
+
 $clear: 0px;
-// Box Shadow
+
+/***** BOX SHADOW *****/
+
 $shadow-sm: map-get($shadow, sm) map-get($shadow, light);
 $shadow-m: map-get($shadow, m) map-get($shadow, light);
 $shadow-lg: map-get($shadow, lg) map-get($shadow, light);
 $shadow-lg-darken: map-get($shadow, lg) map-get($shadow, darker);
-// Nav
+
+/***** NAV *****/
+
 $nav-height: 60px;

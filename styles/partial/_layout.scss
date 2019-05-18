@@ -1,3 +1,12 @@
+/******************************************************
+
+      RESPONSIVE GRID LAYOUT STYLING
+
+******************************************************/
+
+
+/***** COLUMNS AND ROWS *****/
+
 @mixin layout-span() {
     @for $cell from 1 through 6 {
         #{$prefix}span-#{$cell} {
@@ -41,13 +50,17 @@
     }
 }
 
-//grid mixin
+
+/***** GRID MIXIN *****/
+
 @mixin grid() {
     display: grid;
     grid-gap: $padding-xs;
 }
 
-//grid layout
+
+/***** GRID LAYOUT *****/
+
 #{$prefix} {
     &container {
         @include grid();
@@ -83,6 +96,9 @@
 .title {
     grid-column: span $columns;
 }
+
+
+/***** LAYOUT *****/
 
 .cs-body {
     margin: 0px auto;

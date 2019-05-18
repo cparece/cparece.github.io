@@ -1,23 +1,36 @@
-//padding
-@each $key, $val in $padding {
+/******************************************************
+
+      FORMATTING
+
+******************************************************/
+
+
+/***** PADDING *****/
+
+@each $key,
+$val in $padding {
     #{$prefix}padding-#{$key} {
-      padding: #{$val};
+        padding: #{$val};
     }
     #{$prefix}margin-#{$key} {
-      margin: #{$val};
+        margin: #{$val};
     }
-  }
-
-html,
-body {
-  margin: $clear;
-  padding: $clear;
 }
 
 
-//flex
+/***** FLEX *****/
+
 %flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***** OVERRIDES *****/
+
+html,
+body {
+    margin: $clear;
+    padding: $clear;
 }

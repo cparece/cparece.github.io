@@ -1,29 +1,33 @@
-//card
-#{$prefix} {
-  &card {
-    background: map-get($default, bg);
-    color: map-get($default, text);
-    box-shadow: $shadow-sm;
-    border-radius: $radius;
-    margin: $padding-m;
-    display: grid;
-    grid-template-rows: auto 2fr auto;
+/******************************************************
 
-    #{$prefix}title {
-      font-size: map-get($font-size, h4);
-      padding: $padding-sm;
-      font-weight: map-get($font-weight, bold);
-      color: map-get($primary, bg);
-      padding-top: $padding-m;
+      CARD STYLING
+
+******************************************************/
+
+#{$prefix} {
+    &card {
+        background: map-get($default, bg);
+        color: map-get($default, text);
+        box-shadow: $shadow-sm;
+        border-radius: $radius;
+        margin: $padding-m;
+        display: grid;
+        grid-template-rows: auto 2fr auto;
+        #{$prefix}title {
+            font-size: map-get($font-size, h4);
+            padding: $padding-sm;
+            font-weight: map-get($font-weight, bold);
+            color: map-get($primary, bg);
+            padding-top: $padding-m;
+        }
+        #{$prefix}body {
+            padding: $padding-m $padding-sm;
+            margin: $clear;
+        }
+        #{$prefix}actions {
+            border-top: 1px solid map-get($alt, bg);
+            padding: $padding-sm;
+            align-self: end;
+        }
     }
-    #{$prefix}body {
-      padding: $padding-m $padding-sm;
-      margin: $clear;
-    }
-    #{$prefix}actions {
-      border-top: 1px solid map-get($alt, bg);
-      padding: $padding-sm;
-      align-self: end;
-    }
-  }
 }

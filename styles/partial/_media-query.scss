@@ -5,19 +5,19 @@
 ******************************************************/
 
 @mixin media-query($media-query) {
-  @if $media-query==small {
-    @media only screen and (max-width: $breakpoint-sm) {
-      @content;
+    @if $media-query==small {
+        @media only screen and (max-width: $breakpoint-sm) {
+            @content;
+        }
     }
-  }
-  @if $media-query==medium {
-    @media only screen and (max-width: $breakpoint-m) {
-      @content;
+    @if $media-query==medium {
+        @media only screen and (max-width: $breakpoint-m) {
+            @content;
+        }
     }
-  }
-  @if $media-query==large {
-    @media only screen and (max-width: $breakpoint-lg) {
-      @content;
+    @if $media-query==large {
+        @media only screen and (max-width: $breakpoint-lg) {
+            @content;
+        }
     }
-  }
 }
