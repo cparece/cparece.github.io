@@ -1,0 +1,40 @@
+/******************************************************
+
+      Theme Variables
+
+******************************************************/
+
+@import "_theme.palette.scss";
+$prefix: ".cs-";
+
+/***** FONT *****/
+
+$font: ( dark: $color01, light: $color02, family: $font-family, famly-alt: $font-family-02);
+$font-size: ( base: $base, h1: $font-xl, h2: $font-lg, h3: $font-m, h4: $font-m, h5: $font-m, h6: $font-m, p: $font-sm);
+$font-weight: ( light: 300, normal: 400, bold: 600);
+
+/***** COLORS *****/
+
+$background: ( default: $color00, base: $color03, primary: $color04, secondary: $color05, alt: $color06, alt-row: $color03);
+
+/*
+    Always include the following for bg/font:
+    background: map-get($default, bg);
+    color: map-get($default, color);
+*/
+
+$default: ( bg: $color00, text: $color01);
+$default: ( bg: $color03, text: $color01);
+$primary: ( bg: $color04, text: $color02);
+$secondary: ( bg: $color05, text: $color01);
+$alt: ( bg: $color06, text: $color01);
+$hover: ( bg: darken(map-get($default, bg), 5), text: $color01);
+$selected: ( bg: darken(map-get($default, bg), 10), text: $color01);
+
+/***** OTHER *****/
+
+$columns: 6;
+$padding: ( default: 0px, xs: 2px, sm: 5px, m: 10px, lg: 15px, xl: 20px);
+$breakpoint: ( default: 0px, sm: 500px, m: 768px, lg: 1024px);
+$radius: ( default: 0px, sm: 2px, cir: 50px);
+$shadow: ( default: 0px, sm: 1px 1px 2px 0px, m: 2px 2px 4px 0px, lg: 3px 3px 6px 0px, light: rgba(0, 0, 0, 0.4), darker: rgba(0, 0, 0, 0.2));
