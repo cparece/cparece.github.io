@@ -91,10 +91,10 @@ $selected: (
 $padding: (
   default: 0px,
   xs: 2px,
-  sm: calc(map-get($padding, sm)*2),
-  m: calc(map-get($padding, sm)*4),
-  lg: calc(map-get($padding, sm)*6),
-  xl: calc(map-get($padding, sm)*8)
+  sm: 5px,
+  m: 10px,
+  lg: 15px,
+  xl: 20px
 );
 
 $breakpoint: (
