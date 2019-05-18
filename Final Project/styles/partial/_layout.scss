@@ -1,0 +1,94 @@
+@mixin layout-span() {
+    @for $cell from 1 through 6 {
+        #{$prefix}span-#{$cell} {
+            @content;
+            grid-column: span $cell;
+        }
+        #{$prefix}span-row-#{$cell} {
+            @content;
+            grid-row: span $cell;
+        }
+        @include media-query(small) {
+            #{$prefix}span-#{$cell}-sm {
+                @content;
+                grid-column: span $cell !important;
+            }
+            #{$prefix}span-row-#{$cell}-sm {
+                @content;
+                grid-row: span $cell !important;
+            }
+        }
+        @include media-query(medium) {
+            #{$prefix}span-#{$cell}-m {
+                @content;
+                grid-column: span $cell !important;
+            }
+            #{$prefix}span-row-#{$cell}-m {
+                @content;
+                grid-row: span $cell !important;
+            }
+        }
+        @include media-query(large) {
+            #{$prefix}span-#{$cell}-lg {
+                @content;
+                grid-column: span $cell !important;
+            }
+            #{$prefix}span-row-#{$cell}-lg {
+                @content;
+                grid-row: span $cell !important;
+            }
+        }
+    }
+}
+
+//grid mixin
+@mixin grid() {
+    display: grid;
+    grid-gap: $padding-xs;
+}
+
+//grid layout
+#{$prefix} {
+    &container {
+        @include grid();
+        grid-template-columns: repeat($columns, 1fr);
+        grid-gap: $padding-xs;
+        grid-template-rows: auto;
+        padding: $padding-default;
+        grid-column: span $columns;
+        @include media-query(small) {
+            padding: $padding-lg;
+        }
+        @include media-query(medium) {
+            padding: $padding-m;
+        }
+        @include layout-span() {
+            @include media-query(small) {
+                grid-column: span $columns;
+            }
+        }
+    }
+    &section {
+        background: map-get($secondary, bg);
+        color: map-get($secondary, text);
+    }
+    &body {
+        margin-top: $nav-height;
+        @include media-query(small) {
+            margin-top: 0px;
+        }
+    }
+}
+
+.title {
+    grid-column: span $columns;
+}
+
+.cs-body {
+    margin: 0px auto;
+    max-width: map-get($breakpoint, lg);
+    margin-top: $nav-height + 20px;
+    @include media-query(small) {
+        margin-top: 0px;
+    }
+}

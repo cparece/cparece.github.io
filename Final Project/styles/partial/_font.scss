@@ -1,0 +1,67 @@
+/******************************************************
+
+      Font Styles
+
+******************************************************/
+@each $key, $val in $font-size {
+  #{$key} {
+    font-size: #{$val};
+    font-family: $font-family;
+    margin: $clear;
+  }
+}
+
+html {
+  font-family: $font-family;
+  font-size: $base;
+
+  @include media-query(medium) {
+    font-size: calc(12px + 0.4vw);
+  }
+}
+
+h1, h2 {
+  margin: map-get($padding, m) map-get($padding, sm);
+  @include media-query(small) { 
+    margin: map-get($padding, xs);
+  }
+}
+
+h3, h4, h5, h6 {
+  margin: map-get($padding, sm);
+  @include media-query(small) { 
+    margin: map-get($padding, xs);
+  }
+}
+
+h1 {
+  color: map-get($primary, bg);
+  font-weight: map-get($font-weight, light);
+}
+
+
+h2 {
+  font-size: $font-lg;
+}
+h3 {
+  font-size: $font-lg;
+  font-weight: map-get($font-weight, light);
+  color: map-get($primary, bg);
+}
+
+
+h5 {
+  font-weight: map-get($font-weight, light);
+  font-size: $font-sm;
+}
+h6 {
+  font-size: $font-xs;
+  color: map-get($primary, bg);
+}
+p {
+  font-size: $font-sm;
+  margin: map-get($padding, sm);
+  @include media-query(small) { 
+    margin: map-get($padding, xs);
+  }
+}

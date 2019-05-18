@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cortney Stauffer's Framework 0.1 BETA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
+
+<body>
+    <nav class="cs-nav fixed-top">
+        <ul class="primary">
+            <li><a href="#start">Getting Started</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#type">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#table">Table</a></li>
+
+        </ul>
+    </nav>
+    <div class="doc-content cs-body">
+        <div id="start">
+            <div class="cs-section cs-span-6">
+                <h1 class="framework-header">CS Framework</h1>
+                <h5 class="framework-subheader">A super lightweight framework to create simple content websites.</h5>
+
+                <div class="cs-padding-xl cs-span-6 cs-container">
+                    <h3 class="cs-span-6">Getting Started</h3>
+                    <div class="cs-card cs-span-2 cs-span-6-m">
+                        <div class="cs-title">1. Download</div>
+                        <div class="cs-body">
+                            There are two easy ways to get started! You may download the files or clone from github.</br>
+                            </br>
+                            <strong>Download:</strong> <a href="">Click here</a> to begin your download.</br>
+                            </br>
+                            <strong>Github:</strong>
+                            <code>git clone “github clone location”</code>
+                        </div>
+                        <div class="cs-actions"><button class="cs-btn primary">Download</button></div>
+                    </div>
+
+                    <div class="cs-card cs-span-2 cs-span-6-m">
+                        <div class="cs-title">2. Setting Up</div>
+                        <div class="cs-body">Once your files are unzipped and you have added them into your project folder be sure that the file &lt;styles.css&gt; is located in your css folder. In the header of your HTML pages, be sure to include the following head:</br>
+
+                            <code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code>
+                        </div>
+                    </div>
+                    <div class="cs-card cs-span-2 cs-span-6-m">
+                        <div class="cs-title">3. Check out Examples</div>
+                        <div class="cs-body">
+                            Once you get started, check out an example page to see how to combine components to create a super simple webpage.
+
+                        </div>
+                        <div class="cs-actions">
+                            <a href="example.html"><button class="cs-btn primary">Example Page 1</button></a>
+                            <a href="example2.html"><button class="cs-btn primary">Example Page 2</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-container" id="grid">
+            <h3 class="cs-span-6">Grid Layout</h3>
+            <div class="example cs-container">
+                <code class="cs-span-1">1</code>
+                <code class="cs-span-1">1</code>
+                <code class="cs-span-1">1</code>
+                <code class="cs-span-1">1</code>
+                <code class="cs-span-1">1</code>
+                <code class="cs-span-1">1</code>
+
+                <code class="cs-span-2">2</code>
+                <code class="cs-span-2">2</code>
+                <code class="cs-span-2">2</code>
+
+                <code class="cs-span-3">3</code>
+                <code class="cs-span-3">3</code>
+
+                <code class="cs-span-4">4</code>
+                <code class="cs-span-2">2</code>
+
+                <code class="cs-span-5">5</code>
+                <code class="cs-span-1">1</code>
+
+                <code class="cs-span-6">6</code>
+            </div>
+            <div class="cs-span-6 cs-margin-m">
+                This framework utilizes a six column responsive grid system by default, but is customizable within the scss. The grid system is very simple and easy to use. When wanting to use the grid system, start with a wrapper div using the following classes:
+                <code>cs-container</code>. Within the wrapper, you then can add how wide you would like your responsive columns by using the classes:
+                <code>cs-span-*</code>. On smaller devices, the columns will transition into a one column layout by default.</br>
+                </br>
+                Additionally, you can add breakpoints to elements so that you can control the different column breakpoints. Using classes small:
+                <div class="cs-container cs-table">
+                    <div class="cs-container cs-row cs-header">
+                        <div class="cs-span-1">Size</div>
+                        <div class="cs-span-1">Class</div>
+                        <div class="cs-span-4">Examples</div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Small</div>
+                        <div class="cs-span-1"><code>cs-span-#-sm</code></div>
+                        <div class="cs-span-4"><code>cs-span-6-sm</code> will span all six columns only when at the small breakpoint.</div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Medium</div>
+                        <div class="cs-span-1"><code>cs-span-#-m</code></div>
+                        <div class="cs-span-4"><code>cs-span-6-sm</code> will span all six columns only when at the medium breakpoint.</div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Large</div>
+                        <div class="cs-span-1"><code>cs-span-#-lg</code></div>
+                        <div class="cs-span-4"><code>cs-span-6-sm</code> will span all six columns only when at the large breakpoint.</div>
+                    </div>
+                </div>
+                </br>
+                Breakpoint sizes can easily be adjusted within the theme.scss file.
+            </div>
+            <div class="example cs-container">
+                <div class="title">Example:</div>
+                <div class="cs-span-4 cs-span-3-m">
+                    This div will span across four columns. Then will change to three columns at the m breakpoint. Then change to one column at the sm breakpoint.
+                </div>
+                <div class="cs-span-2 cs-span-3-m">
+                    This div will span across two columns. Then will change to three columns at the m breakpoint. Then change to one column at the sm breakpoint.
+                </div>
+
+            </div>
+            <div class="cs-margin-m">
+                <pre class="code-snippet">
+            <code>
+&lt;div class=”cs-container”&gt;
+    &lt;div class=”cs-span-4”&gt;
+        This div will span across four columns.
+    &lt;/div&gt;
+    &lt;div class=”cs-span-2”&gt;
+        This div will span across two columns.
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre></div>
+
+        </div>
+        <div class="cs-container cs-margin-m" id="type">
+            <h3 class="cs-span-6">Typography</h3>
+            <div class="cs-span-6">
+                All fonts are responsive as you resize the browser. The base font size is set to 14px but can easily be modified in the theme.palette.scss file.
+                <br/><br/>
+
+                <div class="cs-container cs-table">
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-6">
+                            <h1>H1 Example</h1>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <h2>H2 Example</h2>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <h3>H3 Example</h3>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <h4>H4 Example</h4>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <h5>H5 Example</h5>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <h6>H6 Example</h6>
+                        </div>
+                    </div>
+                    <div class="cs-container cs-row">
+
+                        <div class="cs-span-6">
+                            <p>p Example</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cs-container cs-margin-m" id="buttons">
+            <h3 class="cs-span-6">Buttons</h3>
+            <div class="cs-span-6">
+                Buttons are elements that should clearly communicate the action that will occur when the user interacts with it.
+                <br/><br/> There are a variety of buttons types that can be utilized. A good rule of thumb is to only allow one primary button per page. The rest of the buttons should be secondary or tertiary actions so that the the user has clear guidance
+                on what the main call to action is on the page. Adding a raised primary button can help add additional context and draw the eye to the action the user should take.
+                <br/><br/>Create a button using the
+                <code>button</code> tag, then add any additional attributes to the
+                <code>class</code>. Be sure to include the text caption, icon or image, and any additional event handlers and attributes.
+            </div>
+            <div class="code-snippet cs-span-6">
+                <code>&lt;button class="cs-btn"&gt;Button&lt;/button&gt;</code>
+            </div>
+            <div class="cs-container cs-table">
+                <div class="cs-container cs-row cs-header">
+                    <div class="cs-span-2">Name</div>
+                    <div class="cs-span-1">Class</div>
+                    <div class="cs-span-3">Examples</div>
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-2">Button</div>
+                    <div class="cs-span-1 code">cs-btn</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn">Button</button>
+                        <button class="cs-btn primary">Primary</button>
+                        <button class="cs-btn secondary">Secondary</button>
+                    </div>
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-2">Raised</div>
+                    <div class="cs-span-1 code">raised</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn raised">Button</button>
+                        <button class="cs-btn raised primary">Primary</button>
+                        <button class="cs-btn raised secondary">Secondary</button>
+                    </div>
+                </div>
+
+                <div class="cs-container cs-row">
+                    <div class="cs-span-2">Disabled</div>
+                    <div class="cs-span-1 code">disabled</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn disabled">Button</button>
+                        <button class="cs-btn disabled primary">Primary</button>
+                        <button class="cs-btn disabled secondary">Secondary</button>
+                    </div>
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-2">Fixed Width</div>
+                    <div class="cs-span-1 code">fixed</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn fixed">Button</button>
+                        <button class="cs-btn fixed primary">Primary</button>
+                        <button class="cs-btn fixed secondary">Secondary</button>
+                    </div>
+                </div>
+                <div class="cs-container row">
+                    <div class="cs-span-2">Primary</div>
+                    <div class="cs-span-1 code">primary</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn primary">Primary</button>
+                    </div>
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-2">Secondary</div>
+                    <div class="cs-span-1 code">secondary</div>
+                    <div class="cs-span-3">
+                        <button class="cs-btn secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-container cs-margin-m" id="cards">
+            <h3 class="cs-span-6">Cards</h3>
+            <div class="cs-span-6">
+                Cards can be used to group related content together. They work well with utilizing the grid layout as a baseline than adding different size cards within the layout. To create a consistent experience, cards fill the height of the other elements within
+                the grid row.
+                <br/><br/> Create a card using the
+                <code>card</code> tag, then add any additional attributes to the
+                <code>class</code>. Be sure to include the grid span size and any additional attributes. <br /><br />Within a card, the following elements can be used:
+                <ul class="cs-padding-lg">
+                    <li><code>cs-title</code></li>
+                    <li><code>cs-body</code></li>
+                    <li><code>cs-actions</code></li>
+                </ul>
+
+                <div class="code-snippet">
+                    <pre>
+            <code>
+  &lt;div class="cs-container"&gt;
+    &lt;div class="cs-card cs-span-3"&gt;
+      &lt;div class="cs-title"&gt;Card Title&lt;/div&gt;
+      &lt;div class="cs-body"&gt;Card Body&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+          </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-container cs-margin-m">
+            <div class="title">Example:</div>
+
+            <div class="cs-card cs-span-3">
+                <div class="cs-title">Card Header</div>
+                <div class="cs-body">
+                    Card Body
+                </div>
+                <div class="cs-actions">
+                    <button class="cs-btn primary">Primary</button>
+                </div>
+            </div>
+            <div class="cs-card cs-span-3">
+                <div class="cs-title">Card Header</div>
+                <div class="cs-body">Card Body</div>
+            </div>
+            <div class="cs-card cs-span-2">
+                <div class="cs-body">Card Body</div>
+            </div>
+            <div class="cs-card cs-span-2">
+                <div class="cs-body">Card Body</div>
+            </div>
+            <div class="cs-card cs-span-2">
+                <div class="cs-body">Card Body</div>
+            </div>
+        </div>
+        <div class="cs-container cs-margin-m" id="navigation">
+            <h3 class="cs-span-6">Navigation</h3>
+            <div class="cs-span-6">
+                The navigation is a basic horizontal navigation that will turn into a vertical navigation for the small breakpoint. To utilize the navigation component you must use the <code>nav</code> tag along with the class <code>cs-nav</code>. The
+                navigation can also be fixed at the top by utilizing the class <code>fixed-top</code>. To highlight the selected navigation item, add the class <code>active</code> to the <code>&lt;li&gt;</code>.
+                </br>
+                </br>
+                <div class="cs-container">
+                    <nav class="cs-span-6 cs-nav">
+                        <ul>
+                            <li class="active">Nav Item</li>
+                            <li>Nav Item</li>
+                            <li>Nav Item</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="code-snippet cs-margin-m">
+                    <pre>
+          <code >
+&lt;nav class="cs-nav cs-span-6">
+  &lt;ul>
+    &lt;li>Nav Item&lt;/li>
+    &lt;li>Nav Item&lt;/li>
+    &lt;li>Nav Item&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+          </code>
+        </pre></div>
+            </div>
+        </div>
+
+        <div class="cs-container cs-margin-m" id="table">
+
+            <h3 class="cs-span-6">Table</h3>
+            <div class="cs-span-6">
+                A table can be used to organize data in a more readable way. To create a data table, you will use div tags instead of the table tag, to maximize flexability and utilize the grid system. By default the table is responsive and changes layouts at the small
+                breakpoint.
+
+                <div class="cs-container cs-table">
+                    <div class="cs-container cs-row cs-header">
+                        <div class="cs-span-1">Name</div>
+                        <div class="cs-span-1">Class</div>
+
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Table</div>
+                        <div class="cs-span-1"><code>cs-table</code></div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Row</div>
+                        <div class="cs-span-1"><code>cs-row</code></div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Header</div>
+                        <div class="cs-span-1"><code>cs-header</code></div>
+                    </div>
+                    <div class="cs-container cs-row">
+                        <div class="cs-span-1">Alternate</div>
+                        <div class="cs-span-1"><code>cs-alt</code></div>
+                    </div>
+                </div>
+
+                <div class="code-snippet cs-margin-m">
+                    <pre>
+          <code>
+&lt;div class="cs-container cs-table">
+  //Header
+  &lt;div class="cs-container cs-row cs-header">
+    &lt;div class="cs-span-1">Header&lt;/div>
+    &lt;div class="cs-span-1">Header&lt;/div>
+    &lt;div class="cs-span-1">Header&lt;/div>
+  &lt;/div>
+  //Row 1
+  &lt;div class="cs-container row">
+      &lt;div class="cs-span-1">Cell&lt;/div>
+      &lt;div class="cs-span-1">Cell&lt;/div>
+      &lt;div class="cs-span-1">Cell&lt;/div>
+  &lt;/div>
+  //Row 2
+  &lt;div class="cs-container row">
+      &lt;div class="cs-span-1">Cell&lt;/div>
+      &lt;div class="cs-span-1">Cell&lt;/div>
+      &lt;div class="cs-span-1">Cell&lt;/div>
+  &lt;/div>
+&lt;/div>
+          </code>
+        </pre>
+                </div>
+            </div>
+            <div class="cs-container cs-table cs-margin-xl">
+                <div class="cs-container cs-row cs-header">
+                    <div class="cs-span-1">Header</div>
+                    <div class="cs-span-1">Header</div>
+                    <div class="cs-span-1">Header</div>
+                    <div class="cs-span-1">Header</div>
+                    <div class="cs-span-1">Header</div>
+                    <div class="cs-span-1">Header</div>
+
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                </div>
+                <div class="cs-container cs-row cs-alt">
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                </div>
+                <div class="cs-container cs-row">
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                    <div class="cs-span-1">Cell</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

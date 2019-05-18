@@ -1,0 +1,23 @@
+//padding
+@each $key, $val in $padding {
+    #{$prefix}padding-#{$key} {
+      padding: #{$val};
+    }
+    #{$prefix}margin-#{$key} {
+      margin: #{$val};
+    }
+  }
+
+html,
+body {
+  margin: $clear;
+  padding: $clear;
+}
+
+
+//flex
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
