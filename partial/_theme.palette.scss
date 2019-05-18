@@ -28,12 +28,11 @@ $base: 14px;
 :root {
     --base: 14px;
 }
-
 $base-rem: 1em;
 $rem-units: 1.225rem;
-$font-xxs: calc(var(--base)+(0.225rem / 0.25));
+$font-xxs: calc(var(--base) + (0.225rem / 0.25));
 $font-xs: calc(var(--base) - (0.225rem));
 $font-sm: $base;
-$font-m: calc(var(--base)+0.225rem);
-$font-lg: calc(var(--base)+(0.225rem * 2));
-$font-xl: calc(var(--base)+(0.225rem * 3));
+$font-m: calc(var(--base) + 0.225rem);
+$font-lg: calc(var(--base) + (0.225rem * 2));
+$font-xl: calc(var(--base) + (0.225rem * 3));

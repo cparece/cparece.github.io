@@ -67,37 +67,37 @@ base {
 }
 
 h1 {
-  font-size: calc(var(--base)+(0.225rem * 3));
+  font-size: calc(var(--base) + (0.225rem * 3));
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
 h2 {
-  font-size: calc(var(--base)+(0.225rem * 2));
+  font-size: calc(var(--base) + (0.225rem * 2));
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
 h3 {
-  font-size: calc(var(--base)+0.225rem);
+  font-size: calc(var(--base) + 0.225rem);
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
 h4 {
-  font-size: calc(var(--base)+0.225rem);
+  font-size: calc(var(--base) + 0.225rem);
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
 h5 {
-  font-size: calc(var(--base)+0.225rem);
+  font-size: calc(var(--base) + 0.225rem);
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
 
 h6 {
-  font-size: calc(var(--base)+0.225rem);
+  font-size: calc(var(--base) + 0.225rem);
   font-family: "Montserrat", sans-serif;
   margin: 0px;
 }
@@ -145,11 +145,11 @@ h1 {
 }
 
 h2 {
-  font-size: calc(var(--base)+(0.225rem * 2));
+  font-size: calc(var(--base) + (0.225rem * 2));
 }
 
 h3 {
-  font-size: calc(var(--base)+(0.225rem * 2));
+  font-size: calc(var(--base) + (0.225rem * 2));
   font-weight: 300;
   color: #0b2c72;
 }
@@ -987,7 +987,7 @@ p {
 }
 
 .cs-card .cs-title {
-  font-size: calc(var(--base)+0.225rem);
+  font-size: calc(var(--base) + 0.225rem);
   padding: 5px;
   font-weight: 600;
   color: #0b2c72;
@@ -1216,7 +1216,7 @@ hr {
 }
 
 .note {
-  font-size: calc(var(--base)+(0.225rem / 0.25));
+  font-size: calc(var(--base) + (0.225rem / 0.25));
   font-style: italic;
 }
 
