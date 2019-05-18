@@ -1,0 +1,110 @@
+Your name: Cortney Stauffer (Parece)
+
+1. Provide a link to the first page of your documentation website: https://cparece.github.io/index.html
+
+My site looks the way I want on (choose one): Mac
+
+With this browser (choose one): Chrome 
+
+CODE (75 points)
+
+2. 6 column grid system
+Using: Grid 
+Breakpoint values: partial/_theme.scss 500px, 768px, 1024px
+
+
+Default grid Sass partial file name: partial/_layout.scss
+Starting line numbers: 1
+
+Breakpoint #1 grid Sass partial file name: partial/_layout.scss
+Starting line numbers: 12
+
+Breakpoint #2 grid Sass partial file name: partial/_layout.scss
+Starting line numbers: 23
+
+
+3. Color scheme
+Sass partial file name: partial/_theme.palette.scss & partial/_theme.scss
+Sass line numbers: 1-8
+
+
+4. Responsive navigation bar
+Sass partial file name: partial/_nav.scss
+Sass line numbers: Entire partial
+
+
+5. Examples of RWD 2.0 implemented
+List 3 different examples of where you've made use of RWD 2.0 in your work. 
+
+Example: padding, typography, and grid columns would count. 
+
+However, padding, more padding, and yet more padding would NOT count.
+
+Sass partial file name: partial/_font.scss
+Sass line numbers example 1: 18-20
+
+Sass partial file name: partial/_table.scss
+Sass line numbers example 2: 10
+
+Sass partial file name: partial/_font.scss
+Sass line numbers example 3: 30-34
+
+
+6. Two elements
+Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron, image styling, list styling, table styling, text styling elements, visibility classes. 
+
+a. Choice 1: Button
+Sass partial file name: partial/_button.scss
+Sass line numbers: Entire partial
+
+b. Choice 2: Card
+Sass partial file name:  partial/_card.scss
+Sass line numbers: Entire partial
+
+
+Part 2: Documentation and examples (74 points)
+
+7. Framework name: CS Framework
+
+For each of the below items, provide a URL where the requested information is located.
+
+8. Download button: https://cparece.github.io/index.html
+
+9. Installation: https://cparece.github.io/index.html#start https://github.com/cparece/cparece.github.io/blob/master/styles.zip
+
+10. Grid system install/examples: https://cparece.github.io/index.html#grid
+
+11. Nav bar install/examples: https://cparece.github.io/index.html#navigation
+
+12: Styled element #1 install/examples: https://cparece.github.io/index.html#buttons
+
+13: Styled element #2 install/examples: https://cparece.github.io/index.html#cards
+
+14: Sass docs for colors: https://github.com/cparece/cparece.github.io/blob/master/styles/partial/_theme.palette.scss
+
+15: Sass docs for fonts: https://github.com/cparece/cparece.github.io/blob/master/styles/partial/_theme.palette.scss
+
+16: Sass docs for media query breakpoints: https://github.com/cparece/cparece.github.io/blob/master/styles/partial/_media-query.scss
+
+17: Docs for anything else (list as many URLs as desired and describe what is located there):
+
+Additional Element: https://cparece.github.io/index.html#table
+Additional Example Page: https://cparece.github.io/example2.html
+
+18: Example starter page: https://cparece.github.io/example.html
+
+
+
+ABOVE AND BEYOND (16 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why? You can do more than one thing if you want.
+
+If you add code features, add matching docs for full credit.
+
+Additional Component:
+Table
+Sass partial file name:  partial/_Table.scss
+Sass line numbers: Entire partial
+
+Second Example Page:
+
+Other: I tried to keep the sass files as organized as possible so a user could easily swap out the basic theme files by just touching _theme.scss and _theme.palette.scss. 
